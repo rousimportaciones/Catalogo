@@ -1,0 +1,93 @@
+
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Catálogo - Pedido por WhatsApp</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+        <style>
+            :root { --primary-color: #25D366; --dark-color: #121b22; }
+            body { background-color: #f4f7f6; font-family: 'Segoe UI', sans-serif; }
+            .navbar { background-color: var(--dark-color); color: white; }
+            .card { border: none; border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); height: 100%; transition: 0.2s; }
+            .card.selected { border: 2px solid var(--primary-color); background: #e8f9ef; }
+            .img-container { height: 140px; display: flex; align-items: center; justify-content: center; background: #fff; }
+            .card-img-top { max-height: 100%; max-width: 100%; object-fit: contain; padding: 10px; }
+            .no-image-icon { font-size: 3rem; color: #dee2e6; }
+            .btn-check-item { width: 100%; border-radius: 10px; font-weight: 700; border: 2px solid var(--primary-color); color: var(--primary-color); background: transparent; }
+            .btn-check-item.active { background-color: var(--primary-color); color: white; }
+            #cart-floating { position: fixed; bottom: 20px; right: 20px; z-index: 1000; background: var(--primary-color); color: white; border: none; border-radius: 50px; padding: 15px 25px; font-weight: 800; display: none; align-items: center; gap: 10px; box-shadow: 0 5px 20px rgba(37, 211, 102, 0.4); }
+            .price-tag { font-size: 1.1rem; font-weight: 800; }
+            .badge-stock { position: absolute; top: 10px; right: 10px; font-size: 0.65rem; }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar sticky-top py-3 mb-4 text-center">
+            <div class="container d-flex justify-content-center">
+                <h5 class="mb-0 fw-bold"><i class="bi bi-shop me-2"></i>Catálogo de la Tienda</h5>
+            </div>
+        </nav>
+
+        <div class="container pb-5">
+            <div class="row gx-2 gy-3">
+    
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="card position-relative" id="card-64b0df3f-94e6-40ec-858b-fcdac740f2e7">
+                        <span class="badge bg-success badge-stock">Stock: 15</span>
+                        <div class="img-container"><i class="bi bi-box-seam no-image-icon"></i></div>
+                        <div class="card-body p-2 text-center">
+                            <div class="card-title mb-1 small fw-bold text-truncate">Leche</div>
+                            <div class="price-tag mb-2">S/ 8.0</div>
+                            <button class="btn btn-check-item btn-sm" onclick="toggleItem('64b0df3f-94e6-40ec-858b-fcdac740f2e7', 'Leche', '8.0')" >
+                                Seleccionar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+        
+            </div>
+        </div>
+
+        <button id="cart-floating" onclick="sendOrder()">
+            <i class="bi bi-whatsapp fs-4"></i>
+            <span>Enviar Pedido (<span id="cart-count">0</span>)</span>
+        </button>
+
+        <script>
+            let cart = [];
+            function toggleItem(id, name, price) {
+                const index = cart.findIndex(item => item.id === id);
+                const card = document.getElementById('card-' + id);
+                const btn = card.querySelector('.btn-check-item');
+                if (index > -1) {
+                    cart.splice(index, 1);
+                    card.classList.remove('selected');
+                    btn.classList.remove('active');
+                    btn.innerText = 'Seleccionar';
+                } else {
+                    cart.push({ id, name, price });
+                    card.classList.add('selected');
+                    btn.classList.add('active');
+                    btn.innerText = '✓ Añadido';
+                }
+                document.getElementById('cart-count').innerText = cart.length;
+                document.getElementById('cart-floating').style.display = cart.length > 0 ? 'flex' : 'none';
+            }
+
+            function sendOrder() {
+                let message = "¡Hola! Quisiera estos productos:\n\n";
+                let total = 0;
+                cart.forEach((item, i) => {
+                    message += (i+1) + ". " + item.name + " (S/ " + item.price + ")\n";
+                    total += parseFloat(item.price);
+                });
+                message += "\n*Total: S/ " + total.toFixed(2) + "*";
+                window.open("https://wa.me/51935900740?text=" + encodeURIComponent(message), '_blank');
+            }
+        </script>
+        <div class="text-center pb-5 text-muted small">Sincronizado: 13/05/2026 06:04 PM</div>
+    </body>
+    </html>
+    

@@ -1,0 +1,9 @@
+actualizar.py
+
+*.txt
+log_tienda.txt
+
+__pycache__/
+*.pyc
+
+.env
