@@ -4,119 +4,312 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Catálogo - Pedido por WhatsApp</title>
+        <title>ROUS - Catálogo</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
         <style>
-            :root { --primary-color: #25D366; --dark-color: #121b22; }
-            body { background-color: #f4f7f6; font-family: 'Segoe UI', sans-serif; }
-            .navbar { background-color: var(--dark-color); color: white; }
-            .card { border: none; border-radius: 15px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); height: 100%; transition: 0.2s; }
-            .card.selected { border: 2px solid var(--primary-color); background: #e8f9ef; }
-            .img-container { height: 140px; display: flex; align-items: center; justify-content: center; background: #fff; }
-            .card-img-top { max-height: 100%; max-width: 100%; object-fit: contain; padding: 10px; }
-            .no-image-icon { font-size: 3rem; color: #dee2e6; }
-            .btn-check-item { width: 100%; border-radius: 10px; font-weight: 700; border: 2px solid var(--primary-color); color: var(--primary-color); background: transparent; }
-            .btn-check-item.active { background-color: var(--primary-color); color: white; }
-            #cart-floating { position: fixed; bottom: 20px; right: 20px; z-index: 1000; background: var(--primary-color); color: white; border: none; border-radius: 50px; padding: 15px 25px; font-weight: 800; display: none; align-items: center; gap: 10px; box-shadow: 0 5px 20px rgba(37, 211, 102, 0.4); }
-            .price-tag { font-size: 1.1rem; font-weight: 800; }
-            .badge-stock { position: absolute; top: 10px; right: 10px; font-size: 0.65rem; }
+            :root { 
+                --primary-color: #FF4B2B; 
+                --primary-hover: #E63E1F;
+                --dark-color: #1a1a1a; 
+                --bg-light: #fdfdfd;
+                --disabled-gray: #6c757d;
+                --border-soft: #f0f0f0;
+            }
+            
+            body { 
+                background-color: var(--bg-light); 
+                font-family: 'Inter', sans-serif; 
+                color: #333;
+            }
+
+            .navbar { 
+                background-color: white; 
+                box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+                border-bottom: 3px solid var(--primary-color);
+            }
+
+            .brand-name {
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 800;
+                font-size: 1.8rem;
+                letter-spacing: -1px;
+                color: var(--primary-color);
+            }
+
+            /* --- TARJETA REFORZADA --- */
+            .card { 
+                border: 2px solid var(--border-soft); /* Borde visible pero suave */
+                border-radius: 20px; 
+                box-shadow: 0 4px 12px rgba(0,0,0,0.03); 
+                transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+                background: #fff;
+                overflow: hidden;
+            }
+
+            .card.selected { 
+                border-color: var(--primary-color); 
+                background: #fffefd; 
+                transform: translateY(-12px); 
+                box-shadow: 0 15px 30px rgba(255, 75, 43, 0.15);
+            }
+
+            .img-container { 
+                height: 200px; 
+                display: flex; 
+                align-items: center; 
+                justify-content: center; 
+                background: #fff;
+                padding: 15px; 
+            }
+
+            .card-img-top { 
+                max-height: 100%; 
+                max-width: 100%; 
+                object-fit: contain; 
+            }
+
+            /* --- ICONO SIN IMAGEN MEJORADO --- */
+            .no-image-icon { 
+                font-size: 4rem; 
+                color: #ced4da; /* Gris más visible */
+            }
+
+            .card-title {
+                font-size: 1rem;
+                font-weight: 700;
+                color: var(--dark-color);
+                margin-bottom: 0.2rem;
+            }
+
+            .price-tag { 
+                font-size: 1.2rem; 
+                font-weight: 800; 
+                color: var(--primary-color);
+            }
+
+            /* --- BOTONES Y CONTROLES --- */
+            .qty-controls {
+                display: none;
+                align-items: center;
+                justify-content: space-between;
+                background: var(--primary-color);
+                border-radius: 12px;
+                padding: 5px;
+                color: white;
+                height: 46px;
+            }
+
+            .qty-btn {
+                background: transparent;
+                border: none;
+                color: white;
+                font-size: 1.4rem;
+                padding: 0 15px;
+                font-weight: 800;
+                line-height: 1;
+            }
+
+            .qty-val { font-weight: 700; font-size: 1.1rem; }
+
+            .btn-check-item { 
+                width: 100%; 
+                border-radius: 12px; 
+                font-weight: 700; 
+                border: 2px solid var(--primary-color); 
+                color: var(--primary-color); 
+                background: transparent;
+                padding: 10px;
+                transition: 0.2s;
+                height: 46px;
+            }
+
+            /* --- ESTADO DESACTIVADO REFORZADO --- */
+            .btn-check-item:disabled {
+                border-color: #adb5bd !important;
+                color: var(--disabled-gray) !important;
+                background-color: #f8f9fa;
+                opacity: 1; /* Forzamos opacidad total para legibilidad */
+            }
+
+            .badge-stock { 
+                position: absolute; 
+                top: 12px; 
+                right: 12px; 
+                font-size: 0.7rem; 
+                padding: 6px 10px;
+                border-radius: 8px;
+                font-weight: 700;
+                z-index: 10;
+            }
+
+            #cart-floating { 
+                position: fixed; 
+                bottom: 30px; 
+                right: 30px; 
+                z-index: 1000; 
+                background: #25D366; 
+                color: white; 
+                border: none; 
+                border-radius: 50px; 
+                padding: 18px 30px; 
+                font-weight: 800; 
+                display: none; 
+                align-items: center; 
+                gap: 12px; 
+                box-shadow: 0 10px 30px rgba(37, 211, 102, 0.4); 
+            }
+
+            .footer-info {
+                background: #fff;
+                margin-top: 60px;
+                padding: 40px 0;
+                border-top: 1px solid #eee;
+                color: #888;
+            }
         </style>
     </head>
     <body>
-        <nav class="navbar sticky-top py-3 mb-4 text-center">
+        <nav class="navbar sticky-top py-3 mb-5">
             <div class="container d-flex justify-content-center">
-                <h5 class="mb-0 fw-bold"><i class="bi bi-shop me-2"></i>Catálogo de la Tienda</h5>
+                <span class="brand-name">ROUS</span>
             </div>
         </nav>
 
         <div class="container pb-5">
-            <div class="row gx-2 gy-3">
+            <div class="row g-4">
     
-                <div class="col-6 col-md-4 col-lg-2">
-                    <div class="card position-relative" id="card-c2784208-6538-470e-94f1-5ffb63107e39">
-                        <span class="badge bg-success badge-stock">Disponible</span>
-                        <div class="img-container"><i class="bi bi-box-seam no-image-icon"></i></div>
-                        <div class="card-body p-2 text-center">
-                            <div class="card-title mb-1 small fw-bold text-truncate">Cama</div>
-                            <div class="price-tag mb-2">S/ 50.0</div>
-                            <button class="btn btn-check-item btn-sm" onclick="toggleItem('c2784208-6538-470e-94f1-5ffb63107e39', 'Cama', '50.0')" >
-                                Seleccionar
-                            </button>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="card position-relative h-100" id="card-c2784208-6538-470e-94f1-5ffb63107e39">
+                        <span class="badge bg-success badge-stock">Stock: 2</span>
+                        <div class="img-container"><img src="https://api.loyverse.com/image/28e88f36-6ab7-4f7f-877c-ddfb06f48044" class="card-img-top" loading="lazy"></div>
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <div>
+                                <div class="card-title text-truncate" title="Cama">Cama</div>
+                                <div class="price-tag mb-3">S/ 50.0</div>
+                            </div>
+                            <div class="action-area">
+                                
+                    <button class="btn btn-check-item" id="btn-main-c2784208-6538-470e-94f1-5ffb63107e39" onclick="addItem('c2784208-6538-470e-94f1-5ffb63107e39', 'Cama', 50.0, 2)">
+                        Seleccionar
+                    </button>
+                    <div class="qty-controls" id="qty-ctrl-c2784208-6538-470e-94f1-5ffb63107e39">
+                        <button class="qty-btn" onclick="updateQty('c2784208-6538-470e-94f1-5ffb63107e39', -1)">-</button>
+                        <span class="qty-val" id="qty-val-c2784208-6538-470e-94f1-5ffb63107e39">1</span>
+                        <button class="qty-btn" onclick="updateQty('c2784208-6538-470e-94f1-5ffb63107e39', 1, 2)">+</button>
+                    </div>
+                
+                            </div>
                         </div>
                     </div>
                 </div>
         
-                <div class="col-6 col-md-4 col-lg-2">
-                    <div class="card position-relative" id="card-70408da3-b547-48ec-9a78-4055af810ee5">
-                        <span class="badge bg-success badge-stock">Disponible</span>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="card position-relative h-100" id="card-70408da3-b547-48ec-9a78-4055af810ee5">
+                        <span class="badge bg-success badge-stock">Stock: 46</span>
                         <div class="img-container"><i class="bi bi-box-seam no-image-icon"></i></div>
-                        <div class="card-body p-2 text-center">
-                            <div class="card-title mb-1 small fw-bold text-truncate">Camisa</div>
-                            <div class="price-tag mb-2">S/ 30.0</div>
-                            <button class="btn btn-check-item btn-sm" onclick="toggleItem('70408da3-b547-48ec-9a78-4055af810ee5', 'Camisa', '30.0')" >
-                                Seleccionar
-                            </button>
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <div>
+                                <div class="card-title text-truncate" title="Camisa">Camisa</div>
+                                <div class="price-tag mb-3">S/ 30.0</div>
+                            </div>
+                            <div class="action-area">
+                                
+                    <button class="btn btn-check-item" id="btn-main-70408da3-b547-48ec-9a78-4055af810ee5" onclick="addItem('70408da3-b547-48ec-9a78-4055af810ee5', 'Camisa', 30.0, 46)">
+                        Seleccionar
+                    </button>
+                    <div class="qty-controls" id="qty-ctrl-70408da3-b547-48ec-9a78-4055af810ee5">
+                        <button class="qty-btn" onclick="updateQty('70408da3-b547-48ec-9a78-4055af810ee5', -1)">-</button>
+                        <span class="qty-val" id="qty-val-70408da3-b547-48ec-9a78-4055af810ee5">1</span>
+                        <button class="qty-btn" onclick="updateQty('70408da3-b547-48ec-9a78-4055af810ee5', 1, 46)">+</button>
+                    </div>
+                
+                            </div>
                         </div>
                     </div>
                 </div>
         
-                <div class="col-6 col-md-4 col-lg-2">
-                    <div class="card position-relative" id="card-1c665485-fe69-4383-b7f4-ddac854eb55c">
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="card position-relative h-100" id="card-1c665485-fe69-4383-b7f4-ddac854eb55c">
+                        <span class="badge bg-success badge-stock">Stock: 10</span>
+                        <div class="img-container"><img src="https://api.loyverse.com/image/0891ff1a-4418-4a29-a0d6-5803f452f619" class="card-img-top" loading="lazy"></div>
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <div>
+                                <div class="card-title text-truncate" title="Mesa">Mesa</div>
+                                <div class="price-tag mb-3">S/ 100.0</div>
+                            </div>
+                            <div class="action-area">
+                                
+                    <button class="btn btn-check-item" id="btn-main-1c665485-fe69-4383-b7f4-ddac854eb55c" onclick="addItem('1c665485-fe69-4383-b7f4-ddac854eb55c', 'Mesa', 100.0, 10)">
+                        Seleccionar
+                    </button>
+                    <div class="qty-controls" id="qty-ctrl-1c665485-fe69-4383-b7f4-ddac854eb55c">
+                        <button class="qty-btn" onclick="updateQty('1c665485-fe69-4383-b7f4-ddac854eb55c', -1)">-</button>
+                        <span class="qty-val" id="qty-val-1c665485-fe69-4383-b7f4-ddac854eb55c">1</span>
+                        <button class="qty-btn" onclick="updateQty('1c665485-fe69-4383-b7f4-ddac854eb55c', 1, 10)">+</button>
+                    </div>
+                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="card position-relative h-100" id="card-01afa3a4-eaae-45ea-9679-6b9025f0d1ca">
+                        <span class="badge bg-secondary badge-stock">No Disponible</span>
+                        <div class="img-container"><i class="bi bi-box-seam no-image-icon"></i></div>
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <div>
+                                <div class="card-title text-truncate" title="Caja">Caja</div>
+                                <div class="price-tag mb-3">S/ 60.0</div>
+                            </div>
+                            <div class="action-area">
+                                <button class="btn btn-check-item" disabled>No Disponible</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="card position-relative h-100" id="card-86355c8f-bbcb-41f2-97d0-72c7f9997123">
                         <span class="badge bg-danger badge-stock">Agotado</span>
                         <div class="img-container"><i class="bi bi-box-seam no-image-icon"></i></div>
-                        <div class="card-body p-2 text-center">
-                            <div class="card-title mb-1 small fw-bold text-truncate">Mesa</div>
-                            <div class="price-tag mb-2">S/ 500.0</div>
-                            <button class="btn btn-check-item btn-sm" onclick="toggleItem('1c665485-fe69-4383-b7f4-ddac854eb55c', 'Mesa', '500.0')" disabled>
-                                Agotado
-                            </button>
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <div>
+                                <div class="card-title text-truncate" title="Leche">Leche</div>
+                                <div class="price-tag mb-3">S/ 500.0</div>
+                            </div>
+                            <div class="action-area">
+                                <button class="btn btn-check-item" disabled>Agotado</button>
+                            </div>
                         </div>
                     </div>
                 </div>
         
-                <div class="col-6 col-md-4 col-lg-2">
-                    <div class="card position-relative" id="card-01afa3a4-eaae-45ea-9679-6b9025f0d1ca">
-                        <span class="badge bg-success badge-stock">Disponible</span>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <div class="card position-relative h-100" id="card-433e402e-d6bf-4ace-8b95-9e6ca830deed">
+                        <span class="badge bg-secondary badge-stock">No Disponible</span>
                         <div class="img-container"><i class="bi bi-box-seam no-image-icon"></i></div>
-                        <div class="card-body p-2 text-center">
-                            <div class="card-title mb-1 small fw-bold text-truncate">Caja</div>
-                            <div class="price-tag mb-2">S/ 60.0</div>
-                            <button class="btn btn-check-item btn-sm" onclick="toggleItem('01afa3a4-eaae-45ea-9679-6b9025f0d1ca', 'Caja', '60.0')" >
-                                Seleccionar
-                            </button>
+                        <div class="card-body d-flex flex-column justify-content-between">
+                            <div>
+                                <div class="card-title text-truncate" title="Aceite">Aceite</div>
+                                <div class="price-tag mb-3">S/ 10.0</div>
+                            </div>
+                            <div class="action-area">
+                                <button class="btn btn-check-item" disabled>No Disponible</button>
+                            </div>
                         </div>
                     </div>
                 </div>
         
-                <div class="col-6 col-md-4 col-lg-2">
-                    <div class="card position-relative" id="card-86355c8f-bbcb-41f2-97d0-72c7f9997123">
-                        <span class="badge bg-success badge-stock">Disponible</span>
-                        <div class="img-container"><i class="bi bi-box-seam no-image-icon"></i></div>
-                        <div class="card-body p-2 text-center">
-                            <div class="card-title mb-1 small fw-bold text-truncate">Leche</div>
-                            <div class="price-tag mb-2">S/ 15.0</div>
-                            <button class="btn btn-check-item btn-sm" onclick="toggleItem('86355c8f-bbcb-41f2-97d0-72c7f9997123', 'Leche', '15.0')" >
-                                Seleccionar
-                            </button>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="col-6 col-md-4 col-lg-2">
-                    <div class="card position-relative" id="card-433e402e-d6bf-4ace-8b95-9e6ca830deed">
-                        <span class="badge bg-success badge-stock">Disponible</span>
-                        <div class="img-container"><i class="bi bi-box-seam no-image-icon"></i></div>
-                        <div class="card-body p-2 text-center">
-                            <div class="card-title mb-1 small fw-bold text-truncate">Aceite</div>
-                            <div class="price-tag mb-2">S/ 10.0</div>
-                            <button class="btn btn-check-item btn-sm" onclick="toggleItem('433e402e-d6bf-4ace-8b95-9e6ca830deed', 'Aceite', '10.0')" >
-                                Seleccionar
-                            </button>
-                        </div>
-                    </div>
-                </div>
-        
+            </div>
+        </div>
+
+        <div class="footer-info text-center">
+            <div class="container">
+                <p class="mb-1 fw-bold" style="color: var(--primary-color)">ROUS</p>
+                <p class="small mb-0">Sincronizado: 14/05/2026 01:38 AM</p>
             </div>
         </div>
 
@@ -126,38 +319,71 @@
         </button>
 
         <script>
-            let cart = [];
-            function toggleItem(id, name, price) {
-                const index = cart.findIndex(item => item.id === id);
-                const card = document.getElementById('card-' + id);
-                const btn = card.querySelector('.btn-check-item');
-                if (index > -1) {
-                    cart.splice(index, 1);
-                    card.classList.remove('selected');
-                    btn.classList.remove('active');
-                    btn.innerText = 'Seleccionar';
-                } else {
-                    cart.push({ id, name, price });
-                    card.classList.add('selected');
-                    btn.classList.add('active');
-                    btn.innerText = '✓ Añadido';
+            let cart = {};
+
+            function addItem(id, name, price, max) {
+                cart[id] = { name, price, qty: 1, max };
+                renderItemState(id);
+                updateCartCount();
+            }
+
+            function updateQty(id, delta, max) {
+                if (!cart[id]) return;
+                
+                let newQty = cart[id].qty + delta;
+                
+                if (newQty <= 0) {
+                    delete cart[id];
+                    renderItemState(id, true);
+                } else if (newQty <= cart[id].max) {
+                    cart[id].qty = newQty;
+                    document.getElementById('qty-val-' + id).innerText = newQty;
                 }
-                document.getElementById('cart-count').innerText = cart.length;
-                document.getElementById('cart-floating').style.display = cart.length > 0 ? 'flex' : 'none';
+                
+                updateCartCount();
+            }
+
+            function renderItemState(id, reset = false) {
+                const btnMain = document.getElementById('btn-main-' + id);
+                const qtyCtrl = document.getElementById('qty-ctrl-' + id);
+                const card = document.getElementById('card-' + id);
+
+                if (reset) {
+                    btnMain.style.display = 'block';
+                    qtyCtrl.style.display = 'none';
+                    card.classList.remove('selected');
+                } else {
+                    btnMain.style.display = 'none';
+                    qtyCtrl.style.display = 'flex';
+                    card.classList.add('selected');
+                    document.getElementById('qty-val-' + id).innerText = cart[id].qty;
+                }
+            }
+
+            function updateCartCount() {
+                const count = Object.values(cart).reduce((sum, item) => sum + item.qty, 0);
+                document.getElementById('cart-count').innerText = count;
+                document.getElementById('cart-floating').style.display = count > 0 ? 'flex' : 'none';
             }
 
             function sendOrder() {
-                let message = "¡Hola! Quisiera estos productos:\n\n";
+                let message = "*PEDIDO PARA ROUS*\n";
+                message += "----------------------------\n";
                 let total = 0;
-                cart.forEach((item, i) => {
-                    message += (i+1) + ". " + item.name + " (S/ " + item.price + ")\n";
-                    total += parseFloat(item.price);
-                });
-                message += "\n*Total: S/ " + total.toFixed(2) + "*";
+                
+                for (let id in cart) {
+                    let item = cart[id];
+                    let subtotal = item.price * item.qty;
+                    message += "• " + item.qty + "x " + item.name + " (S/ " + subtotal.toFixed(2) + ")\n";
+                    total += subtotal;
+                }
+                
+                message += "----------------------------\n";
+                message += "*TOTAL: S/ " + total.toFixed(2) + "*";
+                
                 window.open("https://wa.me/51935900740?text=" + encodeURIComponent(message), '_blank');
             }
         </script>
-        <div class="text-center pb-5 text-muted small">Sincronizado: 14/05/2026 12:31 AM</div>
     </body>
     </html>
     
