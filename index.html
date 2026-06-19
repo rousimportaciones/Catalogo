@@ -304,6 +304,7 @@
 <button class="category-btn" onclick="seleccionarCategoria('Cumpleaños', this)">Cumpleaños</button>
 <button class="category-btn" onclick="seleccionarCategoria('Dulce', this)">Dulce</button>
 <button class="category-btn" onclick="seleccionarCategoria('Electrónico y tecnología', this)">Electrónico y tecnología</button>
+<button class="category-btn" onclick="seleccionarCategoria('Herramientas', this)">Herramientas</button>
 <button class="category-btn" onclick="seleccionarCategoria('Hogar', this)">Hogar</button>
 <button class="category-btn" onclick="seleccionarCategoria('Juguetes', this)">Juguetes</button>
 <button class="category-btn" onclick="seleccionarCategoria('Navidad', this)">Navidad</button>
@@ -321,6 +322,631 @@
             <!-- Contenedor de Tarjetas -->
             <div class="row row-grid g-3" id="products-grid">
     
+                <div class="col-6 col-md-4 col-lg-3 product-item" data-name="escoba de palo verde" data-category="Hogar">
+                    <div class="card position-relative h-100" id="card-ed670808-d535-40b8-b211-4536decf5c8e">
+                        <span class="badge bg-success badge-stock">Stock: 38</span>
+                        <div class="img-container"><img src="https://api.loyverse.com/image/7b42a0bc-4fa1-4c9e-ab3f-257423816efd" class="card-img-top" loading="lazy"></div>
+                        <div class="card-body d-flex flex-column justify-content-between p-2 p-md-3">
+                            <div>
+                                <div class="card-title" title="Escoba de palo verde">Escoba de palo verde</div>
+                                <div class="price-tag mb-2">S/ 7.0</div>
+                            </div>
+                            <div class="action-area">
+                                
+                    <button class="btn btn-check-item" id="btn-main-ed670808-d535-40b8-b211-4536decf5c8e" onclick="addItem('ed670808-d535-40b8-b211-4536decf5c8e', 'Escoba de palo verde', 7.0, 38)">
+                        Seleccionar
+                    </button>
+                    <div class="qty-controls" id="qty-ctrl-ed670808-d535-40b8-b211-4536decf5c8e">
+                        <button class="qty-btn" onclick="updateQty('ed670808-d535-40b8-b211-4536decf5c8e', -1)">-</button>
+                        <span class="qty-val" id="qty-val-ed670808-d535-40b8-b211-4536decf5c8e">1</span>
+                        <button class="qty-btn" onclick="updateQty('ed670808-d535-40b8-b211-4536decf5c8e', 1, 38)">+</button>
+                    </div>
+                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-6 col-md-4 col-lg-3 product-item" data-name="mascarilla negra x 10 sachetz" data-category="Productos de Belleza">
+                    <div class="card position-relative h-100" id="card-e60654a1-4e0b-421a-9cde-c8e62ac59101">
+                        <span class="badge bg-success badge-stock">Stock: 8</span>
+                        <div class="img-container"><img src="https://api.loyverse.com/image/e595c9d2-de99-41d2-9307-f2d327e85ac7" class="card-img-top" loading="lazy"></div>
+                        <div class="card-body d-flex flex-column justify-content-between p-2 p-md-3">
+                            <div>
+                                <div class="card-title" title="Mascarilla Negra x 10 sachetz">Mascarilla Negra x 10 sachetz</div>
+                                <div class="price-tag mb-2">S/ 9.0</div>
+                            </div>
+                            <div class="action-area">
+                                
+                    <button class="btn btn-check-item" id="btn-main-e60654a1-4e0b-421a-9cde-c8e62ac59101" onclick="addItem('e60654a1-4e0b-421a-9cde-c8e62ac59101', 'Mascarilla Negra x 10 sachetz', 9.0, 8)">
+                        Seleccionar
+                    </button>
+                    <div class="qty-controls" id="qty-ctrl-e60654a1-4e0b-421a-9cde-c8e62ac59101">
+                        <button class="qty-btn" onclick="updateQty('e60654a1-4e0b-421a-9cde-c8e62ac59101', -1)">-</button>
+                        <span class="qty-val" id="qty-val-e60654a1-4e0b-421a-9cde-c8e62ac59101">1</span>
+                        <button class="qty-btn" onclick="updateQty('e60654a1-4e0b-421a-9cde-c8e62ac59101', 1, 8)">+</button>
+                    </div>
+                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-6 col-md-4 col-lg-3 product-item" data-name="tren didactico cubo" data-category="Juguetes">
+                    <div class="card position-relative h-100" id="card-7f9e32cc-2a6b-4d6a-9d77-cf37af805b75">
+                        <span class="badge bg-success badge-stock">Stock: 5</span>
+                        <div class="img-container"><img src="https://api.loyverse.com/image/541835af-7064-489e-8c56-3c2a98559f7f" class="card-img-top" loading="lazy"></div>
+                        <div class="card-body d-flex flex-column justify-content-between p-2 p-md-3">
+                            <div>
+                                <div class="card-title" title="Tren didactico cubo">Tren didactico cubo</div>
+                                <div class="price-tag mb-2">S/ 12.0</div>
+                            </div>
+                            <div class="action-area">
+                                
+                    <button class="btn btn-check-item" id="btn-main-7f9e32cc-2a6b-4d6a-9d77-cf37af805b75" onclick="addItem('7f9e32cc-2a6b-4d6a-9d77-cf37af805b75', 'Tren didactico cubo', 12.0, 5)">
+                        Seleccionar
+                    </button>
+                    <div class="qty-controls" id="qty-ctrl-7f9e32cc-2a6b-4d6a-9d77-cf37af805b75">
+                        <button class="qty-btn" onclick="updateQty('7f9e32cc-2a6b-4d6a-9d77-cf37af805b75', -1)">-</button>
+                        <span class="qty-val" id="qty-val-7f9e32cc-2a6b-4d6a-9d77-cf37af805b75">1</span>
+                        <button class="qty-btn" onclick="updateQty('7f9e32cc-2a6b-4d6a-9d77-cf37af805b75', 1, 5)">+</button>
+                    </div>
+                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-6 col-md-4 col-lg-3 product-item" data-name="plancha raf" data-category="Electrónico y tecnología">
+                    <div class="card position-relative h-100" id="card-19a8e8ce-4e29-42e4-ad0c-95e92720552c">
+                        <span class="badge bg-success badge-stock">Stock: 8</span>
+                        <div class="img-container"><img src="https://api.loyverse.com/image/0569cd18-e468-4617-8f59-10d4b51fc6a0" class="card-img-top" loading="lazy"></div>
+                        <div class="card-body d-flex flex-column justify-content-between p-2 p-md-3">
+                            <div>
+                                <div class="card-title" title="Plancha Raf">Plancha Raf</div>
+                                <div class="price-tag mb-2">S/ 34.0</div>
+                            </div>
+                            <div class="action-area">
+                                
+                    <button class="btn btn-check-item" id="btn-main-19a8e8ce-4e29-42e4-ad0c-95e92720552c" onclick="addItem('19a8e8ce-4e29-42e4-ad0c-95e92720552c', 'Plancha Raf', 34.0, 8)">
+                        Seleccionar
+                    </button>
+                    <div class="qty-controls" id="qty-ctrl-19a8e8ce-4e29-42e4-ad0c-95e92720552c">
+                        <button class="qty-btn" onclick="updateQty('19a8e8ce-4e29-42e4-ad0c-95e92720552c', -1)">-</button>
+                        <span class="qty-val" id="qty-val-19a8e8ce-4e29-42e4-ad0c-95e92720552c">1</span>
+                        <button class="qty-btn" onclick="updateQty('19a8e8ce-4e29-42e4-ad0c-95e92720552c', 1, 8)">+</button>
+                    </div>
+                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-6 col-md-4 col-lg-3 product-item" data-name="piñataz" data-category="Cumpleaños">
+                    <div class="card position-relative h-100" id="card-2c630b4e-fa87-4d1c-97e9-053bf709b2dc">
+                        <span class="badge bg-success badge-stock">Stock: 20</span>
+                        <div class="img-container"><img src="https://api.loyverse.com/image/25d0dba4-5cf3-40ca-b698-0d100ee672f6" class="card-img-top" loading="lazy"></div>
+                        <div class="card-body d-flex flex-column justify-content-between p-2 p-md-3">
+                            <div>
+                                <div class="card-title" title="Piñataz">Piñataz</div>
+                                <div class="price-tag mb-2">S/ 6.0</div>
+                            </div>
+                            <div class="action-area">
+                                
+                    <button class="btn btn-check-item" id="btn-main-2c630b4e-fa87-4d1c-97e9-053bf709b2dc" onclick="addItem('2c630b4e-fa87-4d1c-97e9-053bf709b2dc', 'Piñataz', 6.0, 20)">
+                        Seleccionar
+                    </button>
+                    <div class="qty-controls" id="qty-ctrl-2c630b4e-fa87-4d1c-97e9-053bf709b2dc">
+                        <button class="qty-btn" onclick="updateQty('2c630b4e-fa87-4d1c-97e9-053bf709b2dc', -1)">-</button>
+                        <span class="qty-val" id="qty-val-2c630b4e-fa87-4d1c-97e9-053bf709b2dc">1</span>
+                        <button class="qty-btn" onclick="updateQty('2c630b4e-fa87-4d1c-97e9-053bf709b2dc', 1, 20)">+</button>
+                    </div>
+                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-6 col-md-4 col-lg-3 product-item" data-name="cinta de embalaje 200yardas" data-category="Útiles Escoles y Oficina">
+                    <div class="card position-relative h-100" id="card-47c6ebfc-293c-46a2-8f3c-a36096be2080">
+                        <span class="badge bg-success badge-stock">Stock: 10</span>
+                        <div class="img-container"><img src="https://api.loyverse.com/image/fc9d8a4f-fda0-4072-9c69-4eadbb1be59b" class="card-img-top" loading="lazy"></div>
+                        <div class="card-body d-flex flex-column justify-content-between p-2 p-md-3">
+                            <div>
+                                <div class="card-title" title="Cinta de embalaje 200yardas">Cinta de embalaje 200yardas</div>
+                                <div class="price-tag mb-2">S/ 4.5</div>
+                            </div>
+                            <div class="action-area">
+                                
+                    <button class="btn btn-check-item" id="btn-main-47c6ebfc-293c-46a2-8f3c-a36096be2080" onclick="addItem('47c6ebfc-293c-46a2-8f3c-a36096be2080', 'Cinta de embalaje 200yardas', 4.5, 10)">
+                        Seleccionar
+                    </button>
+                    <div class="qty-controls" id="qty-ctrl-47c6ebfc-293c-46a2-8f3c-a36096be2080">
+                        <button class="qty-btn" onclick="updateQty('47c6ebfc-293c-46a2-8f3c-a36096be2080', -1)">-</button>
+                        <span class="qty-val" id="qty-val-47c6ebfc-293c-46a2-8f3c-a36096be2080">1</span>
+                        <button class="qty-btn" onclick="updateQty('47c6ebfc-293c-46a2-8f3c-a36096be2080', 1, 10)">+</button>
+                    </div>
+                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-6 col-md-4 col-lg-3 product-item" data-name="cinta embalaje 400 yardas" data-category="Útiles Escoles y Oficina">
+                    <div class="card position-relative h-100" id="card-c74c5f8a-a81b-4ce0-9897-49577b5d760c">
+                        <span class="badge bg-success badge-stock">Stock: 3</span>
+                        <div class="img-container"><img src="https://api.loyverse.com/image/3d7dcddc-ecc5-43c6-9933-09d9465e87f0" class="card-img-top" loading="lazy"></div>
+                        <div class="card-body d-flex flex-column justify-content-between p-2 p-md-3">
+                            <div>
+                                <div class="card-title" title="Cinta Embalaje 400 yardas">Cinta Embalaje 400 yardas</div>
+                                <div class="price-tag mb-2">S/ 7.5</div>
+                            </div>
+                            <div class="action-area">
+                                
+                    <button class="btn btn-check-item" id="btn-main-c74c5f8a-a81b-4ce0-9897-49577b5d760c" onclick="addItem('c74c5f8a-a81b-4ce0-9897-49577b5d760c', 'Cinta Embalaje 400 yardas', 7.5, 3)">
+                        Seleccionar
+                    </button>
+                    <div class="qty-controls" id="qty-ctrl-c74c5f8a-a81b-4ce0-9897-49577b5d760c">
+                        <button class="qty-btn" onclick="updateQty('c74c5f8a-a81b-4ce0-9897-49577b5d760c', -1)">-</button>
+                        <span class="qty-val" id="qty-val-c74c5f8a-a81b-4ce0-9897-49577b5d760c">1</span>
+                        <button class="qty-btn" onclick="updateQty('c74c5f8a-a81b-4ce0-9897-49577b5d760c', 1, 3)">+</button>
+                    </div>
+                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-6 col-md-4 col-lg-3 product-item" data-name="pañito húmedo 25 unidades puré baby" data-category="Aceo">
+                    <div class="card position-relative h-100" id="card-4c15f570-6f5f-4552-b69b-ad9dce0e28ef">
+                        <span class="badge bg-success badge-stock">Stock: 96</span>
+                        <div class="img-container"><img src="https://api.loyverse.com/image/af152087-acec-4a5f-9206-6e1144ec8c7a" class="card-img-top" loading="lazy"></div>
+                        <div class="card-body d-flex flex-column justify-content-between p-2 p-md-3">
+                            <div>
+                                <div class="card-title" title="Pañito húmedo 25 unidades puré baby">Pañito húmedo 25 unidades puré baby</div>
+                                <div class="price-tag mb-2">S/ 1.2</div>
+                            </div>
+                            <div class="action-area">
+                                
+                    <button class="btn btn-check-item" id="btn-main-4c15f570-6f5f-4552-b69b-ad9dce0e28ef" onclick="addItem('4c15f570-6f5f-4552-b69b-ad9dce0e28ef', 'Pañito húmedo 25 unidades puré baby', 1.2, 96)">
+                        Seleccionar
+                    </button>
+                    <div class="qty-controls" id="qty-ctrl-4c15f570-6f5f-4552-b69b-ad9dce0e28ef">
+                        <button class="qty-btn" onclick="updateQty('4c15f570-6f5f-4552-b69b-ad9dce0e28ef', -1)">-</button>
+                        <span class="qty-val" id="qty-val-4c15f570-6f5f-4552-b69b-ad9dce0e28ef">1</span>
+                        <button class="qty-btn" onclick="updateQty('4c15f570-6f5f-4552-b69b-ad9dce0e28ef', 1, 96)">+</button>
+                    </div>
+                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-6 col-md-4 col-lg-3 product-item" data-name="pañito pibe 12 unidades" data-category="Aceo">
+                    <div class="card position-relative h-100" id="card-7cd21366-8753-4e77-8cec-59954a8c8070">
+                        <span class="badge bg-success badge-stock">Stock: 100</span>
+                        <div class="img-container"><img src="https://api.loyverse.com/image/5ce8bbb3-0ec1-470a-8b1b-7190aa2088c9" class="card-img-top" loading="lazy"></div>
+                        <div class="card-body d-flex flex-column justify-content-between p-2 p-md-3">
+                            <div>
+                                <div class="card-title" title="Pañito pibe 12 unidades">Pañito pibe 12 unidades</div>
+                                <div class="price-tag mb-2">S/ 0.9</div>
+                            </div>
+                            <div class="action-area">
+                                
+                    <button class="btn btn-check-item" id="btn-main-7cd21366-8753-4e77-8cec-59954a8c8070" onclick="addItem('7cd21366-8753-4e77-8cec-59954a8c8070', 'Pañito pibe 12 unidades', 0.9, 100)">
+                        Seleccionar
+                    </button>
+                    <div class="qty-controls" id="qty-ctrl-7cd21366-8753-4e77-8cec-59954a8c8070">
+                        <button class="qty-btn" onclick="updateQty('7cd21366-8753-4e77-8cec-59954a8c8070', -1)">-</button>
+                        <span class="qty-val" id="qty-val-7cd21366-8753-4e77-8cec-59954a8c8070">1</span>
+                        <button class="qty-btn" onclick="updateQty('7cd21366-8753-4e77-8cec-59954a8c8070', 1, 100)">+</button>
+                    </div>
+                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-6 col-md-4 col-lg-3 product-item" data-name="jabon curcuma con miel" data-category="Aceo">
+                    <div class="card position-relative h-100" id="card-290042d9-11cc-4327-aeb9-65abdd143f14">
+                        <span class="badge bg-success badge-stock">Stock: 36</span>
+                        <div class="img-container"><img src="https://api.loyverse.com/image/13bf4691-49cc-49fb-81b4-1b6da0be9944" class="card-img-top" loading="lazy"></div>
+                        <div class="card-body d-flex flex-column justify-content-between p-2 p-md-3">
+                            <div>
+                                <div class="card-title" title="Jabon curcuma con miel">Jabon curcuma con miel</div>
+                                <div class="price-tag mb-2">S/ 4.5</div>
+                            </div>
+                            <div class="action-area">
+                                
+                    <button class="btn btn-check-item" id="btn-main-290042d9-11cc-4327-aeb9-65abdd143f14" onclick="addItem('290042d9-11cc-4327-aeb9-65abdd143f14', 'Jabon curcuma con miel', 4.5, 36)">
+                        Seleccionar
+                    </button>
+                    <div class="qty-controls" id="qty-ctrl-290042d9-11cc-4327-aeb9-65abdd143f14">
+                        <button class="qty-btn" onclick="updateQty('290042d9-11cc-4327-aeb9-65abdd143f14', -1)">-</button>
+                        <span class="qty-val" id="qty-val-290042d9-11cc-4327-aeb9-65abdd143f14">1</span>
+                        <button class="qty-btn" onclick="updateQty('290042d9-11cc-4327-aeb9-65abdd143f14', 1, 36)">+</button>
+                    </div>
+                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-6 col-md-4 col-lg-3 product-item" data-name="vasos chop papa" data-category="Regalos bolsas y adornos">
+                    <div class="card position-relative h-100" id="card-b35e31e8-81eb-4194-9fb0-fb2b3b27a931">
+                        <span class="badge bg-success badge-stock">Stock: 24</span>
+                        <div class="img-container"><img src="https://api.loyverse.com/image/6f9da680-acb8-45ce-9489-169868cdb219" class="card-img-top" loading="lazy"></div>
+                        <div class="card-body d-flex flex-column justify-content-between p-2 p-md-3">
+                            <div>
+                                <div class="card-title" title="Vasos Chop papa">Vasos Chop papa</div>
+                                <div class="price-tag mb-2">S/ 6.2</div>
+                            </div>
+                            <div class="action-area">
+                                
+                    <button class="btn btn-check-item" id="btn-main-b35e31e8-81eb-4194-9fb0-fb2b3b27a931" onclick="addItem('b35e31e8-81eb-4194-9fb0-fb2b3b27a931', 'Vasos Chop papa', 6.2, 24)">
+                        Seleccionar
+                    </button>
+                    <div class="qty-controls" id="qty-ctrl-b35e31e8-81eb-4194-9fb0-fb2b3b27a931">
+                        <button class="qty-btn" onclick="updateQty('b35e31e8-81eb-4194-9fb0-fb2b3b27a931', -1)">-</button>
+                        <span class="qty-val" id="qty-val-b35e31e8-81eb-4194-9fb0-fb2b3b27a931">1</span>
+                        <button class="qty-btn" onclick="updateQty('b35e31e8-81eb-4194-9fb0-fb2b3b27a931', 1, 24)">+</button>
+                    </div>
+                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-6 col-md-4 col-lg-3 product-item" data-name="cajita cubo chocolate papa" data-category="Dulce">
+                    <div class="card position-relative h-100" id="card-775da5cb-fc46-4d9e-bf39-d80923cce61a">
+                        <span class="badge bg-success badge-stock">Stock: 12</span>
+                        <div class="img-container"><img src="https://api.loyverse.com/image/b07b3d5b-ad0f-40e8-817e-bca5b43651b6" class="card-img-top" loading="lazy"></div>
+                        <div class="card-body d-flex flex-column justify-content-between p-2 p-md-3">
+                            <div>
+                                <div class="card-title" title="Cajita cubo chocolate papa">Cajita cubo chocolate papa</div>
+                                <div class="price-tag mb-2">S/ 5.5</div>
+                            </div>
+                            <div class="action-area">
+                                
+                    <button class="btn btn-check-item" id="btn-main-775da5cb-fc46-4d9e-bf39-d80923cce61a" onclick="addItem('775da5cb-fc46-4d9e-bf39-d80923cce61a', 'Cajita cubo chocolate papa', 5.5, 12)">
+                        Seleccionar
+                    </button>
+                    <div class="qty-controls" id="qty-ctrl-775da5cb-fc46-4d9e-bf39-d80923cce61a">
+                        <button class="qty-btn" onclick="updateQty('775da5cb-fc46-4d9e-bf39-d80923cce61a', -1)">-</button>
+                        <span class="qty-val" id="qty-val-775da5cb-fc46-4d9e-bf39-d80923cce61a">1</span>
+                        <button class="qty-btn" onclick="updateQty('775da5cb-fc46-4d9e-bf39-d80923cce61a', 1, 12)">+</button>
+                    </div>
+                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-6 col-md-4 col-lg-3 product-item" data-name="caja chocolate papa" data-category="Dulce">
+                    <div class="card position-relative h-100" id="card-27c32127-ce9d-46cc-9bb1-d5eb42930da6">
+                        <span class="badge bg-success badge-stock">Stock: 2</span>
+                        <div class="img-container"><img src="https://api.loyverse.com/image/25104e68-e1cd-480e-ba14-4c26a4875507" class="card-img-top" loading="lazy"></div>
+                        <div class="card-body d-flex flex-column justify-content-between p-2 p-md-3">
+                            <div>
+                                <div class="card-title" title="Caja chocolate papa">Caja chocolate papa</div>
+                                <div class="price-tag mb-2">S/ 6.5</div>
+                            </div>
+                            <div class="action-area">
+                                
+                    <button class="btn btn-check-item" id="btn-main-27c32127-ce9d-46cc-9bb1-d5eb42930da6" onclick="addItem('27c32127-ce9d-46cc-9bb1-d5eb42930da6', 'Caja chocolate papa', 6.5, 2)">
+                        Seleccionar
+                    </button>
+                    <div class="qty-controls" id="qty-ctrl-27c32127-ce9d-46cc-9bb1-d5eb42930da6">
+                        <button class="qty-btn" onclick="updateQty('27c32127-ce9d-46cc-9bb1-d5eb42930da6', -1)">-</button>
+                        <span class="qty-val" id="qty-val-27c32127-ce9d-46cc-9bb1-d5eb42930da6">1</span>
+                        <button class="qty-btn" onclick="updateQty('27c32127-ce9d-46cc-9bb1-d5eb42930da6', 1, 2)">+</button>
+                    </div>
+                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-6 col-md-4 col-lg-3 product-item" data-name="esmaltes pw" data-category="Productos de Belleza">
+                    <div class="card position-relative h-100" id="card-664b6a1e-48f2-456a-b398-b5d99d3c31d2">
+                        <span class="badge bg-success badge-stock">Stock: 17</span>
+                        <div class="img-container"><img src="https://api.loyverse.com/image/57b2d18b-142d-450c-8922-541438a80b9c" class="card-img-top" loading="lazy"></div>
+                        <div class="card-body d-flex flex-column justify-content-between p-2 p-md-3">
+                            <div>
+                                <div class="card-title" title="Esmaltes PW">Esmaltes PW</div>
+                                <div class="price-tag mb-2">S/ 3.5</div>
+                            </div>
+                            <div class="action-area">
+                                
+                    <button class="btn btn-check-item" id="btn-main-664b6a1e-48f2-456a-b398-b5d99d3c31d2" onclick="addItem('664b6a1e-48f2-456a-b398-b5d99d3c31d2', 'Esmaltes PW', 3.5, 17)">
+                        Seleccionar
+                    </button>
+                    <div class="qty-controls" id="qty-ctrl-664b6a1e-48f2-456a-b398-b5d99d3c31d2">
+                        <button class="qty-btn" onclick="updateQty('664b6a1e-48f2-456a-b398-b5d99d3c31d2', -1)">-</button>
+                        <span class="qty-val" id="qty-val-664b6a1e-48f2-456a-b398-b5d99d3c31d2">1</span>
+                        <button class="qty-btn" onclick="updateQty('664b6a1e-48f2-456a-b398-b5d99d3c31d2', 1, 17)">+</button>
+                    </div>
+                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-6 col-md-4 col-lg-3 product-item" data-name="macetero medida 32x20cm" data-category="Otros">
+                    <div class="card position-relative h-100" id="card-99bc70dc-4ee4-4835-b0e0-e3e90f820521">
+                        <span class="badge bg-success badge-stock">Stock: 20</span>
+                        <div class="img-container"><img src="https://api.loyverse.com/image/32f094d7-f6c8-46b3-b1d3-18160cf62aff" class="card-img-top" loading="lazy"></div>
+                        <div class="card-body d-flex flex-column justify-content-between p-2 p-md-3">
+                            <div>
+                                <div class="card-title" title="Macetero Medida 32x20cm">Macetero Medida 32x20cm</div>
+                                <div class="price-tag mb-2">S/ 2.6</div>
+                            </div>
+                            <div class="action-area">
+                                
+                    <button class="btn btn-check-item" id="btn-main-99bc70dc-4ee4-4835-b0e0-e3e90f820521" onclick="addItem('99bc70dc-4ee4-4835-b0e0-e3e90f820521', 'Macetero Medida 32x20cm', 2.6, 20)">
+                        Seleccionar
+                    </button>
+                    <div class="qty-controls" id="qty-ctrl-99bc70dc-4ee4-4835-b0e0-e3e90f820521">
+                        <button class="qty-btn" onclick="updateQty('99bc70dc-4ee4-4835-b0e0-e3e90f820521', -1)">-</button>
+                        <span class="qty-val" id="qty-val-99bc70dc-4ee4-4835-b0e0-e3e90f820521">1</span>
+                        <button class="qty-btn" onclick="updateQty('99bc70dc-4ee4-4835-b0e0-e3e90f820521', 1, 20)">+</button>
+                    </div>
+                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-6 col-md-4 col-lg-3 product-item" data-name="castillo carpa rosado" data-category="Juguetes">
+                    <div class="card position-relative h-100" id="card-b6bba8b8-d8f7-4043-9f2b-48b03965b8f2">
+                        <span class="badge bg-success badge-stock">Stock: 4</span>
+                        <div class="img-container"><img src="https://api.loyverse.com/image/a2fd7d3d-1e35-4557-a735-e54f26d82eb0" class="card-img-top" loading="lazy"></div>
+                        <div class="card-body d-flex flex-column justify-content-between p-2 p-md-3">
+                            <div>
+                                <div class="card-title" title="Castillo carpa rosado">Castillo carpa rosado</div>
+                                <div class="price-tag mb-2">S/ 24.0</div>
+                            </div>
+                            <div class="action-area">
+                                
+                    <button class="btn btn-check-item" id="btn-main-b6bba8b8-d8f7-4043-9f2b-48b03965b8f2" onclick="addItem('b6bba8b8-d8f7-4043-9f2b-48b03965b8f2', 'Castillo carpa rosado', 24.0, 4)">
+                        Seleccionar
+                    </button>
+                    <div class="qty-controls" id="qty-ctrl-b6bba8b8-d8f7-4043-9f2b-48b03965b8f2">
+                        <button class="qty-btn" onclick="updateQty('b6bba8b8-d8f7-4043-9f2b-48b03965b8f2', -1)">-</button>
+                        <span class="qty-val" id="qty-val-b6bba8b8-d8f7-4043-9f2b-48b03965b8f2">1</span>
+                        <button class="qty-btn" onclick="updateQty('b6bba8b8-d8f7-4043-9f2b-48b03965b8f2', 1, 4)">+</button>
+                    </div>
+                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-6 col-md-4 col-lg-3 product-item" data-name="lonchera termica color entero" data-category="Hogar">
+                    <div class="card position-relative h-100" id="card-d5243f12-83a8-4344-b0a5-81d3f1a075bf">
+                        <span class="badge bg-success badge-stock">Stock: 30</span>
+                        <div class="img-container"><img src="https://api.loyverse.com/image/a1475ac7-f1f6-44b5-be58-a3e9e2c690e5" class="card-img-top" loading="lazy"></div>
+                        <div class="card-body d-flex flex-column justify-content-between p-2 p-md-3">
+                            <div>
+                                <div class="card-title" title="Lonchera termica color entero">Lonchera termica color entero</div>
+                                <div class="price-tag mb-2">S/ 4.5</div>
+                            </div>
+                            <div class="action-area">
+                                
+                    <button class="btn btn-check-item" id="btn-main-d5243f12-83a8-4344-b0a5-81d3f1a075bf" onclick="addItem('d5243f12-83a8-4344-b0a5-81d3f1a075bf', 'Lonchera termica color entero', 4.5, 30)">
+                        Seleccionar
+                    </button>
+                    <div class="qty-controls" id="qty-ctrl-d5243f12-83a8-4344-b0a5-81d3f1a075bf">
+                        <button class="qty-btn" onclick="updateQty('d5243f12-83a8-4344-b0a5-81d3f1a075bf', -1)">-</button>
+                        <span class="qty-val" id="qty-val-d5243f12-83a8-4344-b0a5-81d3f1a075bf">1</span>
+                        <button class="qty-btn" onclick="updateQty('d5243f12-83a8-4344-b0a5-81d3f1a075bf', 1, 30)">+</button>
+                    </div>
+                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-6 col-md-4 col-lg-3 product-item" data-name="guantes desechables 15 pares" data-category="Hogar">
+                    <div class="card position-relative h-100" id="card-42161bfa-70f4-4f48-a3e4-b3a08707ef9b">
+                        <span class="badge bg-success badge-stock">Stock: 30</span>
+                        <div class="img-container"><img src="https://api.loyverse.com/image/ac2ea54b-26cd-4de7-a1b7-1732817a00b8" class="card-img-top" loading="lazy"></div>
+                        <div class="card-body d-flex flex-column justify-content-between p-2 p-md-3">
+                            <div>
+                                <div class="card-title" title="Guantes desechables 15 pares">Guantes desechables 15 pares</div>
+                                <div class="price-tag mb-2">S/ 1.0</div>
+                            </div>
+                            <div class="action-area">
+                                
+                    <button class="btn btn-check-item" id="btn-main-42161bfa-70f4-4f48-a3e4-b3a08707ef9b" onclick="addItem('42161bfa-70f4-4f48-a3e4-b3a08707ef9b', 'Guantes desechables 15 pares', 1.0, 30)">
+                        Seleccionar
+                    </button>
+                    <div class="qty-controls" id="qty-ctrl-42161bfa-70f4-4f48-a3e4-b3a08707ef9b">
+                        <button class="qty-btn" onclick="updateQty('42161bfa-70f4-4f48-a3e4-b3a08707ef9b', -1)">-</button>
+                        <span class="qty-val" id="qty-val-42161bfa-70f4-4f48-a3e4-b3a08707ef9b">1</span>
+                        <button class="qty-btn" onclick="updateQty('42161bfa-70f4-4f48-a3e4-b3a08707ef9b', 1, 30)">+</button>
+                    </div>
+                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-6 col-md-4 col-lg-3 product-item" data-name="destapador pingüino imantado" data-category="Hogar">
+                    <div class="card position-relative h-100" id="card-44940f4b-4235-495a-b80b-560adac1f30d">
+                        <span class="badge bg-success badge-stock">Stock: 20</span>
+                        <div class="img-container"><img src="https://api.loyverse.com/image/9ae62c95-7975-47ec-8d5b-6678c48389c0" class="card-img-top" loading="lazy"></div>
+                        <div class="card-body d-flex flex-column justify-content-between p-2 p-md-3">
+                            <div>
+                                <div class="card-title" title="Destapador pingüino imantado">Destapador pingüino imantado</div>
+                                <div class="price-tag mb-2">S/ 4.5</div>
+                            </div>
+                            <div class="action-area">
+                                
+                    <button class="btn btn-check-item" id="btn-main-44940f4b-4235-495a-b80b-560adac1f30d" onclick="addItem('44940f4b-4235-495a-b80b-560adac1f30d', 'Destapador pingüino imantado', 4.5, 20)">
+                        Seleccionar
+                    </button>
+                    <div class="qty-controls" id="qty-ctrl-44940f4b-4235-495a-b80b-560adac1f30d">
+                        <button class="qty-btn" onclick="updateQty('44940f4b-4235-495a-b80b-560adac1f30d', -1)">-</button>
+                        <span class="qty-val" id="qty-val-44940f4b-4235-495a-b80b-560adac1f30d">1</span>
+                        <button class="qty-btn" onclick="updateQty('44940f4b-4235-495a-b80b-560adac1f30d', 1, 20)">+</button>
+                    </div>
+                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-6 col-md-4 col-lg-3 product-item" data-name="set de 3 tijeras negras" data-category="Útiles Escoles y Oficina">
+                    <div class="card position-relative h-100" id="card-f9846934-f76c-4bc9-899b-a6b8b13bd23f">
+                        <span class="badge bg-success badge-stock">Stock: 15</span>
+                        <div class="img-container"><img src="https://api.loyverse.com/image/2bcdf493-eeb8-4fc7-b3e4-f8b553aeda1a" class="card-img-top" loading="lazy"></div>
+                        <div class="card-body d-flex flex-column justify-content-between p-2 p-md-3">
+                            <div>
+                                <div class="card-title" title="Set de 3 tijeras negras">Set de 3 tijeras negras</div>
+                                <div class="price-tag mb-2">S/ 5.5</div>
+                            </div>
+                            <div class="action-area">
+                                
+                    <button class="btn btn-check-item" id="btn-main-f9846934-f76c-4bc9-899b-a6b8b13bd23f" onclick="addItem('f9846934-f76c-4bc9-899b-a6b8b13bd23f', 'Set de 3 tijeras negras', 5.5, 15)">
+                        Seleccionar
+                    </button>
+                    <div class="qty-controls" id="qty-ctrl-f9846934-f76c-4bc9-899b-a6b8b13bd23f">
+                        <button class="qty-btn" onclick="updateQty('f9846934-f76c-4bc9-899b-a6b8b13bd23f', -1)">-</button>
+                        <span class="qty-val" id="qty-val-f9846934-f76c-4bc9-899b-a6b8b13bd23f">1</span>
+                        <button class="qty-btn" onclick="updateQty('f9846934-f76c-4bc9-899b-a6b8b13bd23f', 1, 15)">+</button>
+                    </div>
+                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-6 col-md-4 col-lg-3 product-item" data-name="llave inglesa con cutter grueso" data-category="Herramientas">
+                    <div class="card position-relative h-100" id="card-24b355a2-42a9-40e3-898a-2553988e978f">
+                        <span class="badge bg-success badge-stock">Stock: 10</span>
+                        <div class="img-container"><img src="https://api.loyverse.com/image/f8745d59-3128-460a-826e-8cf3a2c11033" class="card-img-top" loading="lazy"></div>
+                        <div class="card-body d-flex flex-column justify-content-between p-2 p-md-3">
+                            <div>
+                                <div class="card-title" title="Llave Inglesa con Cutter grueso">Llave Inglesa con Cutter grueso</div>
+                                <div class="price-tag mb-2">S/ 10.0</div>
+                            </div>
+                            <div class="action-area">
+                                
+                    <button class="btn btn-check-item" id="btn-main-24b355a2-42a9-40e3-898a-2553988e978f" onclick="addItem('24b355a2-42a9-40e3-898a-2553988e978f', 'Llave Inglesa con Cutter grueso', 10.0, 10)">
+                        Seleccionar
+                    </button>
+                    <div class="qty-controls" id="qty-ctrl-24b355a2-42a9-40e3-898a-2553988e978f">
+                        <button class="qty-btn" onclick="updateQty('24b355a2-42a9-40e3-898a-2553988e978f', -1)">-</button>
+                        <span class="qty-val" id="qty-val-24b355a2-42a9-40e3-898a-2553988e978f">1</span>
+                        <button class="qty-btn" onclick="updateQty('24b355a2-42a9-40e3-898a-2553988e978f', 1, 10)">+</button>
+                    </div>
+                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-6 col-md-4 col-lg-3 product-item" data-name="prestobarba x 3 unidades" data-category="Aceo">
+                    <div class="card position-relative h-100" id="card-290f87d8-c5c0-40f8-b1f1-0d1431a7a09c">
+                        <span class="badge bg-success badge-stock">Stock: 30</span>
+                        <div class="img-container"><img src="https://api.loyverse.com/image/38e1825c-d4b7-4030-869e-72a7f040111c" class="card-img-top" loading="lazy"></div>
+                        <div class="card-body d-flex flex-column justify-content-between p-2 p-md-3">
+                            <div>
+                                <div class="card-title" title="Prestobarba x 3 unidades">Prestobarba x 3 unidades</div>
+                                <div class="price-tag mb-2">S/ 3.5</div>
+                            </div>
+                            <div class="action-area">
+                                
+                    <button class="btn btn-check-item" id="btn-main-290f87d8-c5c0-40f8-b1f1-0d1431a7a09c" onclick="addItem('290f87d8-c5c0-40f8-b1f1-0d1431a7a09c', 'Prestobarba x 3 unidades', 3.5, 30)">
+                        Seleccionar
+                    </button>
+                    <div class="qty-controls" id="qty-ctrl-290f87d8-c5c0-40f8-b1f1-0d1431a7a09c">
+                        <button class="qty-btn" onclick="updateQty('290f87d8-c5c0-40f8-b1f1-0d1431a7a09c', -1)">-</button>
+                        <span class="qty-val" id="qty-val-290f87d8-c5c0-40f8-b1f1-0d1431a7a09c">1</span>
+                        <button class="qty-btn" onclick="updateQty('290f87d8-c5c0-40f8-b1f1-0d1431a7a09c', 1, 30)">+</button>
+                    </div>
+                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-6 col-md-4 col-lg-3 product-item" data-name="piso kawai 60x40cm" data-category="Hogar">
+                    <div class="card position-relative h-100" id="card-87f812a4-7958-4273-9e58-24f4342f4cb5">
+                        <span class="badge bg-success badge-stock">Stock: 10</span>
+                        <div class="img-container"><img src="https://api.loyverse.com/image/1a53a272-c5ed-4618-9c64-925ff4c5d35a" class="card-img-top" loading="lazy"></div>
+                        <div class="card-body d-flex flex-column justify-content-between p-2 p-md-3">
+                            <div>
+                                <div class="card-title" title="Piso kawai 60x40cm">Piso kawai 60x40cm</div>
+                                <div class="price-tag mb-2">S/ 4.5</div>
+                            </div>
+                            <div class="action-area">
+                                
+                    <button class="btn btn-check-item" id="btn-main-87f812a4-7958-4273-9e58-24f4342f4cb5" onclick="addItem('87f812a4-7958-4273-9e58-24f4342f4cb5', 'Piso kawai 60x40cm', 4.5, 10)">
+                        Seleccionar
+                    </button>
+                    <div class="qty-controls" id="qty-ctrl-87f812a4-7958-4273-9e58-24f4342f4cb5">
+                        <button class="qty-btn" onclick="updateQty('87f812a4-7958-4273-9e58-24f4342f4cb5', -1)">-</button>
+                        <span class="qty-val" id="qty-val-87f812a4-7958-4273-9e58-24f4342f4cb5">1</span>
+                        <button class="qty-btn" onclick="updateQty('87f812a4-7958-4273-9e58-24f4342f4cb5', 1, 10)">+</button>
+                    </div>
+                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-6 col-md-4 col-lg-3 product-item" data-name="forro colchón de 2 plazas" data-category="Hogar">
+                    <div class="card position-relative h-100" id="card-af9a9b1b-cbb5-40dc-a102-ab0aa309ff34">
+                        <span class="badge bg-success badge-stock">Stock: 16</span>
+                        <div class="img-container"><img src="https://api.loyverse.com/image/f9ab8d07-2f05-4093-9df7-9b3449deb98c" class="card-img-top" loading="lazy"></div>
+                        <div class="card-body d-flex flex-column justify-content-between p-2 p-md-3">
+                            <div>
+                                <div class="card-title" title="Forro colchón de 2 plazas">Forro colchón de 2 plazas</div>
+                                <div class="price-tag mb-2">S/ 19.0</div>
+                            </div>
+                            <div class="action-area">
+                                
+                    <button class="btn btn-check-item" id="btn-main-af9a9b1b-cbb5-40dc-a102-ab0aa309ff34" onclick="addItem('af9a9b1b-cbb5-40dc-a102-ab0aa309ff34', 'Forro colchón de 2 plazas', 19.0, 16)">
+                        Seleccionar
+                    </button>
+                    <div class="qty-controls" id="qty-ctrl-af9a9b1b-cbb5-40dc-a102-ab0aa309ff34">
+                        <button class="qty-btn" onclick="updateQty('af9a9b1b-cbb5-40dc-a102-ab0aa309ff34', -1)">-</button>
+                        <span class="qty-val" id="qty-val-af9a9b1b-cbb5-40dc-a102-ab0aa309ff34">1</span>
+                        <button class="qty-btn" onclick="updateQty('af9a9b1b-cbb5-40dc-a102-ab0aa309ff34', 1, 16)">+</button>
+                    </div>
+                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-6 col-md-4 col-lg-3 product-item" data-name="chimpunera" data-category="Ropa y calzado">
+                    <div class="card position-relative h-100" id="card-06db9640-915a-4096-932d-a66c403a3189">
+                        <span class="badge bg-success badge-stock">Stock: 3</span>
+                        <div class="img-container"><img src="https://api.loyverse.com/image/46810e93-8aea-4c40-b197-3152b733f9b7" class="card-img-top" loading="lazy"></div>
+                        <div class="card-body d-flex flex-column justify-content-between p-2 p-md-3">
+                            <div>
+                                <div class="card-title" title="Chimpunera">Chimpunera</div>
+                                <div class="price-tag mb-2">S/ 28.5</div>
+                            </div>
+                            <div class="action-area">
+                                
+                    <button class="btn btn-check-item" id="btn-main-06db9640-915a-4096-932d-a66c403a3189" onclick="addItem('06db9640-915a-4096-932d-a66c403a3189', 'Chimpunera', 28.5, 3)">
+                        Seleccionar
+                    </button>
+                    <div class="qty-controls" id="qty-ctrl-06db9640-915a-4096-932d-a66c403a3189">
+                        <button class="qty-btn" onclick="updateQty('06db9640-915a-4096-932d-a66c403a3189', -1)">-</button>
+                        <span class="qty-val" id="qty-val-06db9640-915a-4096-932d-a66c403a3189">1</span>
+                        <button class="qty-btn" onclick="updateQty('06db9640-915a-4096-932d-a66c403a3189', 1, 3)">+</button>
+                    </div>
+                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
                 <div class="col-6 col-md-4 col-lg-3 product-item" data-name="media paq. 3" data-category="Ropa y calzado">
                     <div class="card position-relative h-100" id="card-98d83432-fc7d-4b55-baea-2a416276f67c">
                         <span class="badge bg-success badge-stock">Stock: 5</span>
@@ -12897,7 +13523,7 @@
         
                 <div class="col-6 col-md-4 col-lg-3 product-item" data-name="pega raton" data-category="Hogar">
                     <div class="card position-relative h-100" id="card-8c86ef4b-c1ca-42e1-a126-4be284fd847d">
-                        <span class="badge bg-success badge-stock">Stock: 16</span>
+                        <span class="badge bg-success badge-stock">Stock: 28</span>
                         <div class="img-container"><img src="https://api.loyverse.com/image/4033373c-7f9c-4bae-99c3-ee257781e94b" class="card-img-top" loading="lazy"></div>
                         <div class="card-body d-flex flex-column justify-content-between p-2 p-md-3">
                             <div>
@@ -12906,13 +13532,13 @@
                             </div>
                             <div class="action-area">
                                 
-                    <button class="btn btn-check-item" id="btn-main-8c86ef4b-c1ca-42e1-a126-4be284fd847d" onclick="addItem('8c86ef4b-c1ca-42e1-a126-4be284fd847d', 'PEGA RATON', 1.4, 16)">
+                    <button class="btn btn-check-item" id="btn-main-8c86ef4b-c1ca-42e1-a126-4be284fd847d" onclick="addItem('8c86ef4b-c1ca-42e1-a126-4be284fd847d', 'PEGA RATON', 1.4, 28)">
                         Seleccionar
                     </button>
                     <div class="qty-controls" id="qty-ctrl-8c86ef4b-c1ca-42e1-a126-4be284fd847d">
                         <button class="qty-btn" onclick="updateQty('8c86ef4b-c1ca-42e1-a126-4be284fd847d', -1)">-</button>
                         <span class="qty-val" id="qty-val-8c86ef4b-c1ca-42e1-a126-4be284fd847d">1</span>
-                        <button class="qty-btn" onclick="updateQty('8c86ef4b-c1ca-42e1-a126-4be284fd847d', 1, 16)">+</button>
+                        <button class="qty-btn" onclick="updateQty('8c86ef4b-c1ca-42e1-a126-4be284fd847d', 1, 28)">+</button>
                     </div>
                 
                             </div>
@@ -15354,7 +15980,7 @@
         
                 <div class="col-6 col-md-4 col-lg-3 product-item" data-name="lavavajilla liquida 1l." data-category="Aceo">
                     <div class="card position-relative h-100" id="card-d3c44c87-ffa5-4ae1-9478-c9186afe3bdf">
-                        <span class="badge bg-success badge-stock">Stock: 11</span>
+                        <span class="badge bg-success badge-stock">Stock: 8</span>
                         <div class="img-container"><img src="https://api.loyverse.com/image/8522cba4-a117-4690-80eb-20fed2627206" class="card-img-top" loading="lazy"></div>
                         <div class="card-body d-flex flex-column justify-content-between p-2 p-md-3">
                             <div>
@@ -15363,13 +15989,13 @@
                             </div>
                             <div class="action-area">
                                 
-                    <button class="btn btn-check-item" id="btn-main-d3c44c87-ffa5-4ae1-9478-c9186afe3bdf" onclick="addItem('d3c44c87-ffa5-4ae1-9478-c9186afe3bdf', 'LAVAVAJILLA LIQUIDA 1L.', 4.0, 11)">
+                    <button class="btn btn-check-item" id="btn-main-d3c44c87-ffa5-4ae1-9478-c9186afe3bdf" onclick="addItem('d3c44c87-ffa5-4ae1-9478-c9186afe3bdf', 'LAVAVAJILLA LIQUIDA 1L.', 4.0, 8)">
                         Seleccionar
                     </button>
                     <div class="qty-controls" id="qty-ctrl-d3c44c87-ffa5-4ae1-9478-c9186afe3bdf">
                         <button class="qty-btn" onclick="updateQty('d3c44c87-ffa5-4ae1-9478-c9186afe3bdf', -1)">-</button>
                         <span class="qty-val" id="qty-val-d3c44c87-ffa5-4ae1-9478-c9186afe3bdf">1</span>
-                        <button class="qty-btn" onclick="updateQty('d3c44c87-ffa5-4ae1-9478-c9186afe3bdf', 1, 11)">+</button>
+                        <button class="qty-btn" onclick="updateQty('d3c44c87-ffa5-4ae1-9478-c9186afe3bdf', 1, 8)">+</button>
                     </div>
                 
                             </div>
@@ -16275,24 +16901,24 @@
                     </div>
                 </div>
         
-                <div class="col-6 col-md-4 col-lg-3 product-item" data-name="jabon" data-category="Aceo">
+                <div class="col-6 col-md-4 col-lg-3 product-item" data-name="jabon tokefresh frutas" data-category="Aceo">
                     <div class="card position-relative h-100" id="card-cf9b252b-0b07-4f2c-b2ec-0c584531e91f">
-                        <span class="badge bg-success badge-stock">Stock: 2</span>
+                        <span class="badge bg-success badge-stock">Stock: 96</span>
                         <div class="img-container"><img src="https://api.loyverse.com/image/300ec446-1e48-4607-b583-31cf90416912" class="card-img-top" loading="lazy"></div>
                         <div class="card-body d-flex flex-column justify-content-between p-2 p-md-3">
                             <div>
-                                <div class="card-title" title="JABON">JABON</div>
+                                <div class="card-title" title="Jabon tokefresh frutas">Jabon tokefresh frutas</div>
                                 <div class="price-tag mb-2">S/ 1.0</div>
                             </div>
                             <div class="action-area">
                                 
-                    <button class="btn btn-check-item" id="btn-main-cf9b252b-0b07-4f2c-b2ec-0c584531e91f" onclick="addItem('cf9b252b-0b07-4f2c-b2ec-0c584531e91f', 'JABON', 1.0, 2)">
+                    <button class="btn btn-check-item" id="btn-main-cf9b252b-0b07-4f2c-b2ec-0c584531e91f" onclick="addItem('cf9b252b-0b07-4f2c-b2ec-0c584531e91f', 'Jabon tokefresh frutas', 1.0, 96)">
                         Seleccionar
                     </button>
                     <div class="qty-controls" id="qty-ctrl-cf9b252b-0b07-4f2c-b2ec-0c584531e91f">
                         <button class="qty-btn" onclick="updateQty('cf9b252b-0b07-4f2c-b2ec-0c584531e91f', -1)">-</button>
                         <span class="qty-val" id="qty-val-cf9b252b-0b07-4f2c-b2ec-0c584531e91f">1</span>
-                        <button class="qty-btn" onclick="updateQty('cf9b252b-0b07-4f2c-b2ec-0c584531e91f', 1, 2)">+</button>
+                        <button class="qty-btn" onclick="updateQty('cf9b252b-0b07-4f2c-b2ec-0c584531e91f', 1, 96)">+</button>
                     </div>
                 
                             </div>
@@ -19459,7 +20085,7 @@
         
                 <div class="col-6 col-md-4 col-lg-3 product-item" data-name="cordel 10m" data-category="Hogar">
                     <div class="card position-relative h-100" id="card-208f5a6c-96d1-45dc-a283-d370f111e7ec">
-                        <span class="badge bg-success badge-stock">Stock: 41</span>
+                        <span class="badge bg-success badge-stock">Stock: 147</span>
                         <div class="img-container"><img src="https://api.loyverse.com/image/347a38ad-bb76-4c19-8202-e8d9e37f859f" class="card-img-top" loading="lazy"></div>
                         <div class="card-body d-flex flex-column justify-content-between p-2 p-md-3">
                             <div>
@@ -19468,13 +20094,13 @@
                             </div>
                             <div class="action-area">
                                 
-                    <button class="btn btn-check-item" id="btn-main-208f5a6c-96d1-45dc-a283-d370f111e7ec" onclick="addItem('208f5a6c-96d1-45dc-a283-d370f111e7ec', 'CORDEL 10M', 1.8, 41)">
+                    <button class="btn btn-check-item" id="btn-main-208f5a6c-96d1-45dc-a283-d370f111e7ec" onclick="addItem('208f5a6c-96d1-45dc-a283-d370f111e7ec', 'CORDEL 10M', 1.8, 147)">
                         Seleccionar
                     </button>
                     <div class="qty-controls" id="qty-ctrl-208f5a6c-96d1-45dc-a283-d370f111e7ec">
                         <button class="qty-btn" onclick="updateQty('208f5a6c-96d1-45dc-a283-d370f111e7ec', -1)">-</button>
                         <span class="qty-val" id="qty-val-208f5a6c-96d1-45dc-a283-d370f111e7ec">1</span>
-                        <button class="qty-btn" onclick="updateQty('208f5a6c-96d1-45dc-a283-d370f111e7ec', 1, 41)">+</button>
+                        <button class="qty-btn" onclick="updateQty('208f5a6c-96d1-45dc-a283-d370f111e7ec', 1, 147)">+</button>
                     </div>
                 
                             </div>
@@ -23334,7 +23960,7 @@
         <div class="footer-info text-center">
             <div class="container">
                 <p class="mb-1 fw-bold" style="color: var(--primary-color)">ROUS</p>
-                <p class="small mb-0">Sincronizado: 18/06/2026 08:59 PM</p>
+                <p class="small mb-0">Sincronizado: 19/06/2026 08:42 AM</p>
             </div>
         </div>
 
