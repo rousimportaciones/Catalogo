@@ -323,6 +323,47 @@
             <!-- Contenedor de Tarjetas -->
             <div class="row row-grid g-3" id="products-grid">
     
+                <div class="col-6 col-md-4 col-lg-3 product-item" data-name="correa para caballero" data-category="Ropa y calzado">
+                    <div class="card position-relative h-100" id="card-2ccb62c7-bea3-486a-a9fa-5c8787f8a910">
+                        <span class="badge bg-success badge-stock">Stock: 2</span>
+                        <div class="img-container"><img src="https://api.loyverse.com/image/050fe989-2b40-4cee-b6e7-dc21c37eb199" class="card-img-top" loading="lazy"></div>
+                        <div class="card-body d-flex flex-column justify-content-between p-2 p-md-3">
+                            <div>
+                                <div class="card-title" title="Correa para Caballero">Correa para Caballero</div>
+                                <div class="price-tag mb-2">S/ 9.0</div>
+                            </div>
+                            <div class="action-area">
+                                
+                    <button class="btn btn-check-item" id="btn-main-2ccb62c7-bea3-486a-a9fa-5c8787f8a910" onclick="addItem('2ccb62c7-bea3-486a-a9fa-5c8787f8a910', 'Correa para Caballero', 9.0, 2)">
+                        Seleccionar
+                    </button>
+                    <div class="qty-controls" id="qty-ctrl-2ccb62c7-bea3-486a-a9fa-5c8787f8a910">
+                        <button class="qty-btn" onclick="updateQty('2ccb62c7-bea3-486a-a9fa-5c8787f8a910', -1)">-</button>
+                        <span class="qty-val" id="qty-val-2ccb62c7-bea3-486a-a9fa-5c8787f8a910">1</span>
+                        <button class="qty-btn" onclick="updateQty('2ccb62c7-bea3-486a-a9fa-5c8787f8a910', 1, 2)">+</button>
+                    </div>
+                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-6 col-md-4 col-lg-3 product-item" data-name="carrito de compra" data-category="Hogar">
+                    <div class="card position-relative h-100" id="card-134de931-a856-4b59-ae6d-440d4caafa80">
+                        <span class="badge bg-danger badge-stock">Agotado</span>
+                        <div class="img-container"><i class="bi bi-box-seam no-image-icon"></i></div>
+                        <div class="card-body d-flex flex-column justify-content-between p-2 p-md-3">
+                            <div>
+                                <div class="card-title" title="Carrito de compra">Carrito de compra</div>
+                                <div class="price-tag mb-2">S/ 23.0</div>
+                            </div>
+                            <div class="action-area">
+                                <button class="btn btn-check-item" disabled>Agotado</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
                 <div class="col-6 col-md-4 col-lg-3 product-item" data-name="balsamo fresa" data-category="Otros">
                     <div class="card position-relative h-100" id="card-21742a8d-4bb4-4472-a7fc-e873e698d900">
                         <span class="badge bg-secondary badge-stock">No Disponible</span>
@@ -28751,7 +28792,7 @@
         <div class="footer-info text-center">
             <div class="container">
                 <p class="mb-1 fw-bold" style="color: var(--primary-color)">ROUS</p>
-                <p class="small mb-0">Sincronizado: 06/07/2026 01:42 PM</p>
+                <p class="small mb-0">Sincronizado: 06/07/2026 01:45 PM</p>
             </div>
         </div>
 
