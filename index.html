@@ -323,6 +323,31 @@
             <!-- Contenedor de Tarjetas -->
             <div class="row row-grid g-3" id="products-grid">
     
+                <div class="col-6 col-md-4 col-lg-3 product-item" data-name="forro facil" data-category="Útiles Escoles y Oficina">
+                    <div class="card position-relative h-100" id="card-2dd32f54-21f8-4802-b812-ea62ec6ab927">
+                        <span class="badge bg-success badge-stock">Stock: 20</span>
+                        <div class="img-container"><img src="https://api.loyverse.com/image/1d4c6792-5a16-4449-ac7f-bc4635edf78c" class="card-img-top" loading="lazy"></div>
+                        <div class="card-body d-flex flex-column justify-content-between p-2 p-md-3">
+                            <div>
+                                <div class="card-title" title="Forro Facil">Forro Facil</div>
+                                <div class="price-tag mb-2">S/ 8.5</div>
+                            </div>
+                            <div class="action-area">
+                                
+                    <button class="btn btn-check-item" id="btn-main-2dd32f54-21f8-4802-b812-ea62ec6ab927" onclick="addItem('2dd32f54-21f8-4802-b812-ea62ec6ab927', 'Forro Facil', 8.5, 20)">
+                        Seleccionar
+                    </button>
+                    <div class="qty-controls" id="qty-ctrl-2dd32f54-21f8-4802-b812-ea62ec6ab927">
+                        <button class="qty-btn" onclick="updateQty('2dd32f54-21f8-4802-b812-ea62ec6ab927', -1)">-</button>
+                        <span class="qty-val" id="qty-val-2dd32f54-21f8-4802-b812-ea62ec6ab927">1</span>
+                        <button class="qty-btn" onclick="updateQty('2dd32f54-21f8-4802-b812-ea62ec6ab927', 1, 20)">+</button>
+                    </div>
+                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
                 <div class="col-6 col-md-4 col-lg-3 product-item" data-name="vincha gatito" data-category="Productos de Belleza">
                     <div class="card position-relative h-100" id="card-a94e28d8-ae4b-4dd6-8736-2104ad471c30">
                         <span class="badge bg-danger badge-stock">Agotado</span>
@@ -28943,7 +28968,7 @@
         <div class="footer-info text-center">
             <div class="container">
                 <p class="mb-1 fw-bold" style="color: var(--primary-color)">ROUS</p>
-                <p class="small mb-0">Sincronizado: 08/07/2026 09:18 PM</p>
+                <p class="small mb-0">Sincronizado: 08/07/2026 09:23 PM</p>
             </div>
         </div>
 
