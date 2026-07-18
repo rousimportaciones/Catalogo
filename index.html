@@ -323,6 +323,47 @@
             <!-- Contenedor de Tarjetas -->
             <div class="row row-grid g-3" id="products-grid">
     
+                <div class="col-6 col-md-4 col-lg-3 product-item" data-name="monedero silicona" data-category="Juguetes">
+                    <div class="card position-relative h-100" id="card-99a6ac54-88e2-45a0-a038-0b25402647c9">
+                        <span class="badge bg-secondary badge-stock">No Disponible</span>
+                        <div class="img-container"><img src="https://api.loyverse.com/image/3e5db44a-a239-49ca-9c96-e41b7a30d957" class="card-img-top" loading="lazy"></div>
+                        <div class="card-body d-flex flex-column justify-content-between p-2 p-md-3">
+                            <div>
+                                <div class="card-title" title="Monedero silicona">Monedero silicona</div>
+                                <div class="price-tag mb-2">S/ 4.0</div>
+                            </div>
+                            <div class="action-area">
+                                <button class="btn btn-check-item" disabled>No Disponible</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-6 col-md-4 col-lg-3 product-item" data-name="burbuja pistola" data-category="Hogar">
+                    <div class="card position-relative h-100" id="card-5572252d-7752-4df1-9163-ed1ea1193922">
+                        <span class="badge bg-success badge-stock">Stock: 1</span>
+                        <div class="img-container"><i class="bi bi-box-seam no-image-icon"></i></div>
+                        <div class="card-body d-flex flex-column justify-content-between p-2 p-md-3">
+                            <div>
+                                <div class="card-title" title="Burbuja pistola">Burbuja pistola</div>
+                                <div class="price-tag mb-2">S/ 11.0</div>
+                            </div>
+                            <div class="action-area">
+                                
+                    <button class="btn btn-check-item" id="btn-main-5572252d-7752-4df1-9163-ed1ea1193922" onclick="addItem('5572252d-7752-4df1-9163-ed1ea1193922', 'Burbuja pistola', 11.0, 1)">
+                        Seleccionar
+                    </button>
+                    <div class="qty-controls" id="qty-ctrl-5572252d-7752-4df1-9163-ed1ea1193922">
+                        <button class="qty-btn" onclick="updateQty('5572252d-7752-4df1-9163-ed1ea1193922', -1)">-</button>
+                        <span class="qty-val" id="qty-val-5572252d-7752-4df1-9163-ed1ea1193922">1</span>
+                        <button class="qty-btn" onclick="updateQty('5572252d-7752-4df1-9163-ed1ea1193922', 1, 1)">+</button>
+                    </div>
+                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
                 <div class="col-6 col-md-4 col-lg-3 product-item" data-name="crepé por unidad" data-category="Útiles Escoles y Oficina">
                     <div class="card position-relative h-100" id="card-36efe3a1-b10b-44c1-abba-38a600c557d6">
                         <span class="badge bg-success badge-stock">Stock: 10</span>
@@ -30795,7 +30836,7 @@
         <div class="footer-info text-center">
             <div class="container">
                 <p class="mb-1 fw-bold" style="color: var(--primary-color)">ROUS</p>
-                <p class="small mb-0">Sincronizado: 17/07/2026 09:44 PM</p>
+                <p class="small mb-0">Sincronizado: 17/07/2026 09:49 PM</p>
             </div>
         </div>
 
