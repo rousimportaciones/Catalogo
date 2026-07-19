@@ -325,7 +325,7 @@
     
                 <div class="col-6 col-md-4 col-lg-3 product-item" data-name="bandeja para cubiertos" data-category="Cocina">
                     <div class="card position-relative h-100" id="card-65119c7c-5cec-4a12-bb9a-157801efe8a9">
-                        <span class="badge bg-secondary badge-stock">No Disponible</span>
+                        <span class="badge bg-success badge-stock">Stock: 16</span>
                         <div class="img-container"><img src="https://api.loyverse.com/image/8da4b263-25bb-4643-b9fe-b683db2349ba" class="card-img-top" loading="lazy"></div>
                         <div class="card-body d-flex flex-column justify-content-between p-2 p-md-3">
                             <div>
@@ -333,7 +333,16 @@
                                 <div class="price-tag mb-2">S/ 5.0</div>
                             </div>
                             <div class="action-area">
-                                <button class="btn btn-check-item" disabled>No Disponible</button>
+                                
+                    <button class="btn btn-check-item" id="btn-main-65119c7c-5cec-4a12-bb9a-157801efe8a9" onclick="addItem('65119c7c-5cec-4a12-bb9a-157801efe8a9', 'Bandeja para Cubiertos', 5.0, 16)">
+                        Seleccionar
+                    </button>
+                    <div class="qty-controls" id="qty-ctrl-65119c7c-5cec-4a12-bb9a-157801efe8a9">
+                        <button class="qty-btn" onclick="updateQty('65119c7c-5cec-4a12-bb9a-157801efe8a9', -1)">-</button>
+                        <span class="qty-val" id="qty-val-65119c7c-5cec-4a12-bb9a-157801efe8a9">1</span>
+                        <button class="qty-btn" onclick="updateQty('65119c7c-5cec-4a12-bb9a-157801efe8a9', 1, 16)">+</button>
+                    </div>
+                
                             </div>
                         </div>
                     </div>
@@ -31286,7 +31295,7 @@
         <div class="footer-info text-center">
             <div class="container">
                 <p class="mb-1 fw-bold" style="color: var(--primary-color)">ROUS</p>
-                <p class="small mb-0">Sincronizado: 19/07/2026 03:40 PM</p>
+                <p class="small mb-0">Sincronizado: 19/07/2026 03:45 PM</p>
             </div>
         </div>
 
