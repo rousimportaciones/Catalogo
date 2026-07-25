@@ -326,7 +326,7 @@
     
                 <div class="col-6 col-md-4 col-lg-3 product-item" data-name="rosas terciopelo" data-category="Otros">
                     <div class="card position-relative h-100" id="card-a607e21b-4e0c-408d-ac7e-6837b7446e3b">
-                        <span class="badge bg-secondary badge-stock">No Disponible</span>
+                        <span class="badge bg-success badge-stock">Stock: 20</span>
                         <div class="img-container"><img src="https://api.loyverse.com/image/8c5f11a4-f4bb-45bb-ae41-8a2a4f205cad" class="card-img-top" loading="lazy"></div>
                         <div class="card-body d-flex flex-column justify-content-between p-2 p-md-3">
                             <div>
@@ -334,7 +334,16 @@
                                 <div class="price-tag mb-2">S/ 3.0</div>
                             </div>
                             <div class="action-area">
-                                <button class="btn btn-check-item" disabled>No Disponible</button>
+                                
+                    <button class="btn btn-check-item" id="btn-main-a607e21b-4e0c-408d-ac7e-6837b7446e3b" onclick="addItem('a607e21b-4e0c-408d-ac7e-6837b7446e3b', 'ROSAS TERCIOPELO', 3.0, 20)">
+                        Seleccionar
+                    </button>
+                    <div class="qty-controls" id="qty-ctrl-a607e21b-4e0c-408d-ac7e-6837b7446e3b">
+                        <button class="qty-btn" onclick="updateQty('a607e21b-4e0c-408d-ac7e-6837b7446e3b', -1)">-</button>
+                        <span class="qty-val" id="qty-val-a607e21b-4e0c-408d-ac7e-6837b7446e3b">1</span>
+                        <button class="qty-btn" onclick="updateQty('a607e21b-4e0c-408d-ac7e-6837b7446e3b', 1, 20)">+</button>
+                    </div>
+                
                             </div>
                         </div>
                     </div>
@@ -32194,7 +32203,7 @@
         <div class="footer-info text-center">
             <div class="container">
                 <p class="mb-1 fw-bold" style="color: var(--primary-color)">ROUS</p>
-                <p class="small mb-0">Sincronizado: 25/07/2026 12:13 PM</p>
+                <p class="small mb-0">Sincronizado: 25/07/2026 12:15 PM</p>
             </div>
         </div>
 
