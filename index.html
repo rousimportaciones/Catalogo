@@ -324,6 +324,31 @@
             <!-- Contenedor de Tarjetas -->
             <div class="row row-grid g-3" id="products-grid">
     
+                <div class="col-6 col-md-4 col-lg-3 product-item" data-name="taza cafe" data-category="Cocina">
+                    <div class="card position-relative h-100" id="card-470e4e02-caaa-4c1e-847b-3c1255d98660">
+                        <span class="badge bg-success badge-stock">Stock: 12</span>
+                        <div class="img-container"><img src="https://api.loyverse.com/image/0c897dc0-2104-4831-b69a-dc4eef366fcc" class="card-img-top" loading="lazy"></div>
+                        <div class="card-body d-flex flex-column justify-content-between p-2 p-md-3">
+                            <div>
+                                <div class="card-title" title="Taza Cafe">Taza Cafe</div>
+                                <div class="price-tag mb-2">S/ 2.5</div>
+                            </div>
+                            <div class="action-area">
+                                
+                    <button class="btn btn-check-item" id="btn-main-470e4e02-caaa-4c1e-847b-3c1255d98660" onclick="addItem('470e4e02-caaa-4c1e-847b-3c1255d98660', 'Taza Cafe', 2.5, 12)">
+                        Seleccionar
+                    </button>
+                    <div class="qty-controls" id="qty-ctrl-470e4e02-caaa-4c1e-847b-3c1255d98660">
+                        <button class="qty-btn" onclick="updateQty('470e4e02-caaa-4c1e-847b-3c1255d98660', -1)">-</button>
+                        <span class="qty-val" id="qty-val-470e4e02-caaa-4c1e-847b-3c1255d98660">1</span>
+                        <button class="qty-btn" onclick="updateQty('470e4e02-caaa-4c1e-847b-3c1255d98660', 1, 12)">+</button>
+                    </div>
+                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
                 <div class="col-6 col-md-4 col-lg-3 product-item" data-name="tendedero" data-category="Hogar">
                     <div class="card position-relative h-100" id="card-b070a69e-9087-41d4-95dc-ab0d773f3d26">
                         <span class="badge bg-secondary badge-stock">No Disponible</span>
@@ -3822,7 +3847,7 @@
         
                 <div class="col-6 col-md-4 col-lg-3 product-item" data-name="taza blanca" data-category="Hogar">
                     <div class="card position-relative h-100" id="card-b2de0c94-5328-4710-8dc1-84b79a5e509d">
-                        <span class="badge bg-danger badge-stock">Agotado</span>
+                        <span class="badge bg-success badge-stock">Stock: 48</span>
                         <div class="img-container"><img src="https://api.loyverse.com/image/1767a6ac-b3ef-4cdf-9188-a94c88ec9c1c" class="card-img-top" loading="lazy"></div>
                         <div class="card-body d-flex flex-column justify-content-between p-2 p-md-3">
                             <div>
@@ -3830,7 +3855,16 @@
                                 <div class="price-tag mb-2">S/ 2.8</div>
                             </div>
                             <div class="action-area">
-                                <button class="btn btn-check-item" disabled>Agotado</button>
+                                
+                    <button class="btn btn-check-item" id="btn-main-b2de0c94-5328-4710-8dc1-84b79a5e509d" onclick="addItem('b2de0c94-5328-4710-8dc1-84b79a5e509d', 'Taza Blanca', 2.8, 48)">
+                        Seleccionar
+                    </button>
+                    <div class="qty-controls" id="qty-ctrl-b2de0c94-5328-4710-8dc1-84b79a5e509d">
+                        <button class="qty-btn" onclick="updateQty('b2de0c94-5328-4710-8dc1-84b79a5e509d', -1)">-</button>
+                        <span class="qty-val" id="qty-val-b2de0c94-5328-4710-8dc1-84b79a5e509d">1</span>
+                        <button class="qty-btn" onclick="updateQty('b2de0c94-5328-4710-8dc1-84b79a5e509d', 1, 48)">+</button>
+                    </div>
+                
                             </div>
                         </div>
                     </div>
@@ -32156,7 +32190,7 @@
         <div class="footer-info text-center">
             <div class="container">
                 <p class="mb-1 fw-bold" style="color: var(--primary-color)">ROUS</p>
-                <p class="small mb-0">Sincronizado: 26/07/2026 12:54 PM</p>
+                <p class="small mb-0">Sincronizado: 26/07/2026 12:59 PM</p>
             </div>
         </div>
 
