@@ -7213,7 +7213,7 @@
         
                 <div class="col-6 col-md-4 col-lg-3 product-item" data-name="kit sonajero bb" data-category="Juguetes">
                     <div class="card position-relative h-100" id="card-a7fb2617-e067-4de9-9cc4-145fddb5d2fe">
-                        <span class="badge bg-danger badge-stock">Agotado</span>
+                        <span class="badge bg-success badge-stock">Stock: 2</span>
                         <div class="img-container"><img src="https://api.loyverse.com/image/8e533cdb-264f-424b-a14d-de380f7dbe40" class="card-img-top" loading="lazy"></div>
                         <div class="card-body d-flex flex-column justify-content-between p-2 p-md-3">
                             <div>
@@ -7221,7 +7221,16 @@
                                 <div class="price-tag mb-2">S/ 12.0</div>
                             </div>
                             <div class="action-area">
-                                <button class="btn btn-check-item" disabled>Agotado</button>
+                                
+                    <button class="btn btn-check-item" id="btn-main-a7fb2617-e067-4de9-9cc4-145fddb5d2fe" onclick="addItem('a7fb2617-e067-4de9-9cc4-145fddb5d2fe', 'Kit sonajero bb', 12.0, 2)">
+                        Seleccionar
+                    </button>
+                    <div class="qty-controls" id="qty-ctrl-a7fb2617-e067-4de9-9cc4-145fddb5d2fe">
+                        <button class="qty-btn" onclick="updateQty('a7fb2617-e067-4de9-9cc4-145fddb5d2fe', -1)">-</button>
+                        <span class="qty-val" id="qty-val-a7fb2617-e067-4de9-9cc4-145fddb5d2fe">1</span>
+                        <button class="qty-btn" onclick="updateQty('a7fb2617-e067-4de9-9cc4-145fddb5d2fe', 1, 2)">+</button>
+                    </div>
+                
                             </div>
                         </div>
                     </div>
@@ -15045,18 +15054,18 @@
                     </div>
                 </div>
         
-                <div class="col-6 col-md-4 col-lg-3 product-item" data-name="juego de football" data-category="Juguetes">
+                <div class="col-6 col-md-4 col-lg-3 product-item" data-name="juego de futball patito" data-category="Juguetes">
                     <div class="card position-relative h-100" id="card-b517230f-6a87-4783-8a54-20c0cba4a9da">
                         <span class="badge bg-success badge-stock">Stock: 2</span>
                         <div class="img-container"><img src="https://api.loyverse.com/image/edd4f37c-bc99-4a46-86d6-7aae0e9b52f9" class="card-img-top" loading="lazy"></div>
                         <div class="card-body d-flex flex-column justify-content-between p-2 p-md-3">
                             <div>
-                                <div class="card-title" title="JUEGO DE FOOTBALL">JUEGO DE FOOTBALL</div>
+                                <div class="card-title" title="JUEGO DE FUTBALL Patito">JUEGO DE FUTBALL Patito</div>
                                 <div class="price-tag mb-2">S/ 12.5</div>
                             </div>
                             <div class="action-area">
                                 
-                    <button class="btn btn-check-item" id="btn-main-b517230f-6a87-4783-8a54-20c0cba4a9da" onclick="addItem('b517230f-6a87-4783-8a54-20c0cba4a9da', 'JUEGO DE FOOTBALL', 12.5, 2)">
+                    <button class="btn btn-check-item" id="btn-main-b517230f-6a87-4783-8a54-20c0cba4a9da" onclick="addItem('b517230f-6a87-4783-8a54-20c0cba4a9da', 'JUEGO DE FUTBALL Patito', 12.5, 2)">
                         Seleccionar
                     </button>
                     <div class="qty-controls" id="qty-ctrl-b517230f-6a87-4783-8a54-20c0cba4a9da">
@@ -15277,18 +15286,18 @@
                     </div>
                 </div>
         
-                <div class="col-6 col-md-4 col-lg-3 product-item" data-name="sonaja" data-category="Juguetes">
+                <div class="col-6 col-md-4 col-lg-3 product-item" data-name="sonaja musical" data-category="Juguetes">
                     <div class="card position-relative h-100" id="card-e472fa1c-9dac-4059-8792-33d953317dfe">
                         <span class="badge bg-success badge-stock">Stock: 1</span>
                         <div class="img-container"><img src="https://api.loyverse.com/image/59a9562c-1908-4046-bca4-633c85fef2c2" class="card-img-top" loading="lazy"></div>
                         <div class="card-body d-flex flex-column justify-content-between p-2 p-md-3">
                             <div>
-                                <div class="card-title" title="SONAJA">SONAJA</div>
+                                <div class="card-title" title="SONAJA Musical">SONAJA Musical</div>
                                 <div class="price-tag mb-2">S/ 15.5</div>
                             </div>
                             <div class="action-area">
                                 
-                    <button class="btn btn-check-item" id="btn-main-e472fa1c-9dac-4059-8792-33d953317dfe" onclick="addItem('e472fa1c-9dac-4059-8792-33d953317dfe', 'SONAJA', 15.5, 1)">
+                    <button class="btn btn-check-item" id="btn-main-e472fa1c-9dac-4059-8792-33d953317dfe" onclick="addItem('e472fa1c-9dac-4059-8792-33d953317dfe', 'SONAJA Musical', 15.5, 1)">
                         Seleccionar
                     </button>
                     <div class="qty-controls" id="qty-ctrl-e472fa1c-9dac-4059-8792-33d953317dfe">
@@ -32160,7 +32169,7 @@
         <div class="footer-info text-center">
             <div class="container">
                 <p class="mb-1 fw-bold" style="color: var(--primary-color)">ROUS</p>
-                <p class="small mb-0">Sincronizado: 28/07/2026 10:05 AM</p>
+                <p class="small mb-0">Sincronizado: 28/07/2026 10:09 AM</p>
             </div>
         </div>
 
