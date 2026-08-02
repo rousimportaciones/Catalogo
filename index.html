@@ -326,7 +326,7 @@
     
                 <div class="col-6 col-md-4 col-lg-3 product-item" data-name="kit de aceo para bebé" data-category="Aceo">
                     <div class="card position-relative h-100" id="card-a2fcc66d-351c-4a5a-bd08-8c82d841c169">
-                        <span class="badge bg-danger badge-stock">Agotado</span>
+                        <span class="badge bg-success badge-stock">Stock: 6</span>
                         <div class="img-container"><img src="https://api.loyverse.com/image/07e008ae-82c8-4484-8bc3-496d8323ff7f" class="card-img-top" loading="lazy"></div>
                         <div class="card-body d-flex flex-column justify-content-between p-2 p-md-3">
                             <div>
@@ -334,7 +334,16 @@
                                 <div class="price-tag mb-2">S/ 9.5</div>
                             </div>
                             <div class="action-area">
-                                <button class="btn btn-check-item" disabled>Agotado</button>
+                                
+                    <button class="btn btn-check-item" id="btn-main-a2fcc66d-351c-4a5a-bd08-8c82d841c169" onclick="addItem('a2fcc66d-351c-4a5a-bd08-8c82d841c169', 'Kit de aceo para bebé', 9.5, 6)">
+                        Seleccionar
+                    </button>
+                    <div class="qty-controls" id="qty-ctrl-a2fcc66d-351c-4a5a-bd08-8c82d841c169">
+                        <button class="qty-btn" onclick="updateQty('a2fcc66d-351c-4a5a-bd08-8c82d841c169', -1)">-</button>
+                        <span class="qty-val" id="qty-val-a2fcc66d-351c-4a5a-bd08-8c82d841c169">1</span>
+                        <button class="qty-btn" onclick="updateQty('a2fcc66d-351c-4a5a-bd08-8c82d841c169', 1, 6)">+</button>
+                    </div>
+                
                             </div>
                         </div>
                     </div>
@@ -32540,7 +32549,7 @@
         <div class="footer-info text-center">
             <div class="container">
                 <p class="mb-1 fw-bold" style="color: var(--primary-color)">ROUS</p>
-                <p class="small mb-0">Sincronizado: 02/08/2026 04:34 PM</p>
+                <p class="small mb-0">Sincronizado: 02/08/2026 04:36 PM</p>
             </div>
         </div>
 
