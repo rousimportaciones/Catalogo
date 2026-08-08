@@ -324,6 +324,47 @@
             <!-- Contenedor de Tarjetas -->
             <div class="row row-grid g-3" id="products-grid">
     
+                <div class="col-6 col-md-4 col-lg-3 product-item" data-name="vaso octagonales" data-category="Cocina">
+                    <div class="card position-relative h-100" id="card-1d85b42f-f28d-4470-adf6-bb10c14b1f87">
+                        <span class="badge bg-danger badge-stock">Agotado</span>
+                        <div class="img-container"><img src="https://api.loyverse.com/image/26265c8a-191d-4046-91c7-011f6fe9aacd" class="card-img-top" loading="lazy"></div>
+                        <div class="card-body d-flex flex-column justify-content-between p-2 p-md-3">
+                            <div>
+                                <div class="card-title" title="Vaso Octagonales">Vaso Octagonales</div>
+                                <div class="price-tag mb-2">S/ 1.0</div>
+                            </div>
+                            <div class="action-area">
+                                <button class="btn btn-check-item" disabled>Agotado</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-6 col-md-4 col-lg-3 product-item" data-name="almohada negra" data-category="Hogar">
+                    <div class="card position-relative h-100" id="card-d1af730e-1a0a-4cf3-b965-43837bb6a094">
+                        <span class="badge bg-success badge-stock">Stock: 1</span>
+                        <div class="img-container"><img src="https://api.loyverse.com/image/e2022440-b115-4a3f-908a-d2136fcbc255" class="card-img-top" loading="lazy"></div>
+                        <div class="card-body d-flex flex-column justify-content-between p-2 p-md-3">
+                            <div>
+                                <div class="card-title" title="Almohada NEGRA">Almohada NEGRA</div>
+                                <div class="price-tag mb-2">S/ 28.0</div>
+                            </div>
+                            <div class="action-area">
+                                
+                    <button class="btn btn-check-item" id="btn-main-d1af730e-1a0a-4cf3-b965-43837bb6a094" onclick="addItem('d1af730e-1a0a-4cf3-b965-43837bb6a094', 'Almohada NEGRA', 28.0, 1)">
+                        Seleccionar
+                    </button>
+                    <div class="qty-controls" id="qty-ctrl-d1af730e-1a0a-4cf3-b965-43837bb6a094">
+                        <button class="qty-btn" onclick="updateQty('d1af730e-1a0a-4cf3-b965-43837bb6a094', -1)">-</button>
+                        <span class="qty-val" id="qty-val-d1af730e-1a0a-4cf3-b965-43837bb6a094">1</span>
+                        <button class="qty-btn" onclick="updateQty('d1af730e-1a0a-4cf3-b965-43837bb6a094', 1, 1)">+</button>
+                    </div>
+                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
                 <div class="col-6 col-md-4 col-lg-3 product-item" data-name="almohada pequeña" data-category="Hogar">
                     <div class="card position-relative h-100" id="card-74af89b0-1be8-479a-a0fd-8421dbfe43b2">
                         <span class="badge bg-success badge-stock">Stock: 6</span>
@@ -33341,7 +33382,7 @@
         
                 <div class="col-6 col-md-4 col-lg-3 product-item" data-name="audífono p9" data-category="Electrónico y tecnología">
                     <div class="card position-relative h-100" id="card-ffc3e14c-9c2f-4ddb-8eda-144fd7d20067">
-                        <span class="badge bg-success badge-stock">Stock: 5</span>
+                        <span class="badge bg-success badge-stock">Stock: 4</span>
                         <div class="img-container"><img src="https://api.loyverse.com/image/ee49f1e3-54f3-4ef1-bcb0-fc16fe686827" class="card-img-top" loading="lazy"></div>
                         <div class="card-body d-flex flex-column justify-content-between p-2 p-md-3">
                             <div>
@@ -33350,13 +33391,13 @@
                             </div>
                             <div class="action-area">
                                 
-                    <button class="btn btn-check-item" id="btn-main-ffc3e14c-9c2f-4ddb-8eda-144fd7d20067" onclick="addItem('ffc3e14c-9c2f-4ddb-8eda-144fd7d20067', 'Audífono P9', 12.0, 5)">
+                    <button class="btn btn-check-item" id="btn-main-ffc3e14c-9c2f-4ddb-8eda-144fd7d20067" onclick="addItem('ffc3e14c-9c2f-4ddb-8eda-144fd7d20067', 'Audífono P9', 12.0, 4)">
                         Seleccionar
                     </button>
                     <div class="qty-controls" id="qty-ctrl-ffc3e14c-9c2f-4ddb-8eda-144fd7d20067">
                         <button class="qty-btn" onclick="updateQty('ffc3e14c-9c2f-4ddb-8eda-144fd7d20067', -1)">-</button>
                         <span class="qty-val" id="qty-val-ffc3e14c-9c2f-4ddb-8eda-144fd7d20067">1</span>
-                        <button class="qty-btn" onclick="updateQty('ffc3e14c-9c2f-4ddb-8eda-144fd7d20067', 1, 5)">+</button>
+                        <button class="qty-btn" onclick="updateQty('ffc3e14c-9c2f-4ddb-8eda-144fd7d20067', 1, 4)">+</button>
                     </div>
                 
                             </div>
@@ -34119,7 +34160,7 @@
         <div class="footer-info text-center">
             <div class="container">
                 <p class="mb-1 fw-bold" style="color: var(--primary-color)">ROUS</p>
-                <p class="small mb-0">Sincronizado: 08/08/2026 12:11 PM</p>
+                <p class="small mb-0">Sincronizado: 08/08/2026 12:17 PM</p>
             </div>
         </div>
 
