@@ -324,6 +324,47 @@
             <!-- Contenedor de Tarjetas -->
             <div class="row row-grid g-3" id="products-grid">
     
+                <div class="col-6 col-md-4 col-lg-3 product-item" data-name="bicarbonato de sodio cont. 100 g" data-category="Cocina">
+                    <div class="card position-relative h-100" id="card-103a9aa7-788e-4bf6-b290-6f127cea340f">
+                        <span class="badge bg-secondary badge-stock">No Disponible</span>
+                        <div class="img-container"><img src="https://api.loyverse.com/image/90a4ed76-c29f-4987-a58a-b64532162b15" class="card-img-top" loading="lazy"></div>
+                        <div class="card-body d-flex flex-column justify-content-between p-2 p-md-3">
+                            <div>
+                                <div class="card-title" title="Bicarbonato de Sodio cont. 100 g">Bicarbonato de Sodio cont. 100 g</div>
+                                <div class="price-tag mb-2">S/ 3.5</div>
+                            </div>
+                            <div class="action-area">
+                                <button class="btn btn-check-item" disabled>No Disponible</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-6 col-md-4 col-lg-3 product-item" data-name="ácido borico cont. 100 g" data-category="Cocina">
+                    <div class="card position-relative h-100" id="card-5e815499-21c7-4a06-bc6a-f2589f8d2223">
+                        <span class="badge bg-success badge-stock">Stock: 12</span>
+                        <div class="img-container"><img src="https://api.loyverse.com/image/ad471725-25f4-4326-bc02-3cb3a05262b5" class="card-img-top" loading="lazy"></div>
+                        <div class="card-body d-flex flex-column justify-content-between p-2 p-md-3">
+                            <div>
+                                <div class="card-title" title="Ácido Borico cont. 100 g">Ácido Borico cont. 100 g</div>
+                                <div class="price-tag mb-2">S/ 3.5</div>
+                            </div>
+                            <div class="action-area">
+                                
+                    <button class="btn btn-check-item" id="btn-main-5e815499-21c7-4a06-bc6a-f2589f8d2223" onclick="addItem('5e815499-21c7-4a06-bc6a-f2589f8d2223', 'Ácido Borico cont. 100 g', 3.5, 12)">
+                        Seleccionar
+                    </button>
+                    <div class="qty-controls" id="qty-ctrl-5e815499-21c7-4a06-bc6a-f2589f8d2223">
+                        <button class="qty-btn" onclick="updateQty('5e815499-21c7-4a06-bc6a-f2589f8d2223', -1)">-</button>
+                        <span class="qty-val" id="qty-val-5e815499-21c7-4a06-bc6a-f2589f8d2223">1</span>
+                        <button class="qty-btn" onclick="updateQty('5e815499-21c7-4a06-bc6a-f2589f8d2223', 1, 12)">+</button>
+                    </div>
+                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
                 <div class="col-6 col-md-4 col-lg-3 product-item" data-name="carteras economicas" data-category="Regalos bolsas y adornos">
                     <div class="card position-relative h-100" id="card-743c688e-8586-4653-81d6-9f0ad0882fe5">
                         <span class="badge bg-success badge-stock">Stock: 8</span>
@@ -5241,7 +5282,7 @@
         
                 <div class="col-6 col-md-4 col-lg-3 product-item" data-name="vasos colores" data-category="Cocina">
                     <div class="card position-relative h-100" id="card-6630f681-aebe-4ca8-bf12-0f87797d780d">
-                        <span class="badge bg-success badge-stock">Stock: 10</span>
+                        <span class="badge bg-success badge-stock">Stock: 8</span>
                         <div class="img-container"><img src="https://api.loyverse.com/image/7e55897c-f2c9-4375-b655-a16bf9458d27" class="card-img-top" loading="lazy"></div>
                         <div class="card-body d-flex flex-column justify-content-between p-2 p-md-3">
                             <div>
@@ -5250,13 +5291,13 @@
                             </div>
                             <div class="action-area">
                                 
-                    <button class="btn btn-check-item" id="btn-main-6630f681-aebe-4ca8-bf12-0f87797d780d" onclick="addItem('6630f681-aebe-4ca8-bf12-0f87797d780d', 'vasos colores', 2.8, 10)">
+                    <button class="btn btn-check-item" id="btn-main-6630f681-aebe-4ca8-bf12-0f87797d780d" onclick="addItem('6630f681-aebe-4ca8-bf12-0f87797d780d', 'vasos colores', 2.8, 8)">
                         Seleccionar
                     </button>
                     <div class="qty-controls" id="qty-ctrl-6630f681-aebe-4ca8-bf12-0f87797d780d">
                         <button class="qty-btn" onclick="updateQty('6630f681-aebe-4ca8-bf12-0f87797d780d', -1)">-</button>
                         <span class="qty-val" id="qty-val-6630f681-aebe-4ca8-bf12-0f87797d780d">1</span>
-                        <button class="qty-btn" onclick="updateQty('6630f681-aebe-4ca8-bf12-0f87797d780d', 1, 10)">+</button>
+                        <button class="qty-btn" onclick="updateQty('6630f681-aebe-4ca8-bf12-0f87797d780d', 1, 8)">+</button>
                     </div>
                 
                             </div>
@@ -7869,7 +7910,7 @@
         
                 <div class="col-6 col-md-4 col-lg-3 product-item" data-name="indivoduales de mesa" data-category="Hogar">
                     <div class="card position-relative h-100" id="card-1a0338cd-08ce-4c50-b739-deed2de44d98">
-                        <span class="badge bg-success badge-stock">Stock: 10</span>
+                        <span class="badge bg-success badge-stock">Stock: 9</span>
                         <div class="img-container"><img src="https://api.loyverse.com/image/9c5e2f6e-7fd6-4ae8-8a56-cb2d307943c1" class="card-img-top" loading="lazy"></div>
                         <div class="card-body d-flex flex-column justify-content-between p-2 p-md-3">
                             <div>
@@ -7878,13 +7919,13 @@
                             </div>
                             <div class="action-area">
                                 
-                    <button class="btn btn-check-item" id="btn-main-1a0338cd-08ce-4c50-b739-deed2de44d98" onclick="addItem('1a0338cd-08ce-4c50-b739-deed2de44d98', 'Indivoduales de mesa', 3.0, 10)">
+                    <button class="btn btn-check-item" id="btn-main-1a0338cd-08ce-4c50-b739-deed2de44d98" onclick="addItem('1a0338cd-08ce-4c50-b739-deed2de44d98', 'Indivoduales de mesa', 3.0, 9)">
                         Seleccionar
                     </button>
                     <div class="qty-controls" id="qty-ctrl-1a0338cd-08ce-4c50-b739-deed2de44d98">
                         <button class="qty-btn" onclick="updateQty('1a0338cd-08ce-4c50-b739-deed2de44d98', -1)">-</button>
                         <span class="qty-val" id="qty-val-1a0338cd-08ce-4c50-b739-deed2de44d98">1</span>
-                        <button class="qty-btn" onclick="updateQty('1a0338cd-08ce-4c50-b739-deed2de44d98', 1, 10)">+</button>
+                        <button class="qty-btn" onclick="updateQty('1a0338cd-08ce-4c50-b739-deed2de44d98', 1, 9)">+</button>
                     </div>
                 
                             </div>
@@ -20471,7 +20512,7 @@
         
                 <div class="col-6 col-md-4 col-lg-3 product-item" data-name="cafarena t/10" data-category="Ropa y calzado">
                     <div class="card position-relative h-100" id="card-a11a5cdb-b3e8-4c23-b8cd-085decb4c579">
-                        <span class="badge bg-success badge-stock">Stock: 13</span>
+                        <span class="badge bg-success badge-stock">Stock: 12</span>
                         <div class="img-container"><img src="https://api.loyverse.com/image/ae757dc6-6406-4f8a-a09f-14e8be00d6e1" class="card-img-top" loading="lazy"></div>
                         <div class="card-body d-flex flex-column justify-content-between p-2 p-md-3">
                             <div>
@@ -20480,13 +20521,13 @@
                             </div>
                             <div class="action-area">
                                 
-                    <button class="btn btn-check-item" id="btn-main-a11a5cdb-b3e8-4c23-b8cd-085decb4c579" onclick="addItem('a11a5cdb-b3e8-4c23-b8cd-085decb4c579', 'CAFARENA T/10', 6.5, 13)">
+                    <button class="btn btn-check-item" id="btn-main-a11a5cdb-b3e8-4c23-b8cd-085decb4c579" onclick="addItem('a11a5cdb-b3e8-4c23-b8cd-085decb4c579', 'CAFARENA T/10', 6.5, 12)">
                         Seleccionar
                     </button>
                     <div class="qty-controls" id="qty-ctrl-a11a5cdb-b3e8-4c23-b8cd-085decb4c579">
                         <button class="qty-btn" onclick="updateQty('a11a5cdb-b3e8-4c23-b8cd-085decb4c579', -1)">-</button>
                         <span class="qty-val" id="qty-val-a11a5cdb-b3e8-4c23-b8cd-085decb4c579">1</span>
-                        <button class="qty-btn" onclick="updateQty('a11a5cdb-b3e8-4c23-b8cd-085decb4c579', 1, 13)">+</button>
+                        <button class="qty-btn" onclick="updateQty('a11a5cdb-b3e8-4c23-b8cd-085decb4c579', 1, 12)">+</button>
                     </div>
                 
                             </div>
@@ -34910,7 +34951,7 @@
         <div class="footer-info text-center">
             <div class="container">
                 <p class="mb-1 fw-bold" style="color: var(--primary-color)">ROUS</p>
-                <p class="small mb-0">Sincronizado: 09/08/2026 10:42 AM</p>
+                <p class="small mb-0">Sincronizado: 09/08/2026 10:46 AM</p>
             </div>
         </div>
 
