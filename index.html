@@ -33229,7 +33229,7 @@
         
                 <div class="col-6 col-md-4 col-lg-3 product-item" data-name="calson de niña t/10" data-category="Ropa y calzado">
                     <div class="card position-relative h-100" id="card-99f651fe-f84c-48ea-8e56-1df9f24ea4ab">
-                        <span class="badge bg-danger badge-stock">Agotado</span>
+                        <span class="badge bg-success badge-stock">Stock: 12</span>
                         <div class="img-container"><img src="https://api.loyverse.com/image/07d5040d-75e3-4cdb-9fcb-977e03d221b0" class="card-img-top" loading="lazy"></div>
                         <div class="card-body d-flex flex-column justify-content-between p-2 p-md-3">
                             <div>
@@ -33237,7 +33237,16 @@
                                 <div class="price-tag mb-2">S/ 2.5</div>
                             </div>
                             <div class="action-area">
-                                <button class="btn btn-check-item" disabled>Agotado</button>
+                                
+                    <button class="btn btn-check-item" id="btn-main-99f651fe-f84c-48ea-8e56-1df9f24ea4ab" onclick="addItem('99f651fe-f84c-48ea-8e56-1df9f24ea4ab', 'CALSON DE NIÑA T/10', 2.5, 12)">
+                        Seleccionar
+                    </button>
+                    <div class="qty-controls" id="qty-ctrl-99f651fe-f84c-48ea-8e56-1df9f24ea4ab">
+                        <button class="qty-btn" onclick="updateQty('99f651fe-f84c-48ea-8e56-1df9f24ea4ab', -1)">-</button>
+                        <span class="qty-val" id="qty-val-99f651fe-f84c-48ea-8e56-1df9f24ea4ab">1</span>
+                        <button class="qty-btn" onclick="updateQty('99f651fe-f84c-48ea-8e56-1df9f24ea4ab', 1, 12)">+</button>
+                    </div>
+                
                             </div>
                         </div>
                     </div>
@@ -35183,7 +35192,7 @@
         <div class="footer-info text-center">
             <div class="container">
                 <p class="mb-1 fw-bold" style="color: var(--primary-color)">ROUS</p>
-                <p class="small mb-0">Sincronizado: 09/08/2026 08:06 PM</p>
+                <p class="small mb-0">Sincronizado: 09/08/2026 09:03 PM</p>
             </div>
         </div>
 
