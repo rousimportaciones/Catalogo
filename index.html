@@ -324,6 +324,31 @@
             <!-- Contenedor de Tarjetas -->
             <div class="row row-grid g-3" id="products-grid">
     
+                <div class="col-6 col-md-4 col-lg-3 product-item" data-name="spiderman" data-category="Juguetes">
+                    <div class="card position-relative h-100" id="card-80f23f7a-b69a-4507-a47d-4ac9bd5d73b2">
+                        <span class="badge bg-success badge-stock">Stock: 2</span>
+                        <div class="img-container"><img src="https://api.loyverse.com/image/e787ef20-a6aa-466b-95f9-b01dadf0ba72" class="card-img-top" loading="lazy"></div>
+                        <div class="card-body d-flex flex-column justify-content-between p-2 p-md-3">
+                            <div>
+                                <div class="card-title" title="Spiderman">Spiderman</div>
+                                <div class="price-tag mb-2">S/ 17.5</div>
+                            </div>
+                            <div class="action-area">
+                                
+                    <button class="btn btn-check-item" id="btn-main-80f23f7a-b69a-4507-a47d-4ac9bd5d73b2" onclick="addItem('80f23f7a-b69a-4507-a47d-4ac9bd5d73b2', 'Spiderman', 17.5, 2)">
+                        Seleccionar
+                    </button>
+                    <div class="qty-controls" id="qty-ctrl-80f23f7a-b69a-4507-a47d-4ac9bd5d73b2">
+                        <button class="qty-btn" onclick="updateQty('80f23f7a-b69a-4507-a47d-4ac9bd5d73b2', -1)">-</button>
+                        <span class="qty-val" id="qty-val-80f23f7a-b69a-4507-a47d-4ac9bd5d73b2">1</span>
+                        <button class="qty-btn" onclick="updateQty('80f23f7a-b69a-4507-a47d-4ac9bd5d73b2', 1, 2)">+</button>
+                    </div>
+                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
                 <div class="col-6 col-md-4 col-lg-3 product-item" data-name="nintendo + reloj" data-category="Juguetes">
                     <div class="card position-relative h-100" id="card-0f38f6ca-f08c-46ca-b4ea-66ad55f9484c">
                         <span class="badge bg-success badge-stock">Stock: 4</span>
@@ -35763,7 +35788,7 @@
         <div class="footer-info text-center">
             <div class="container">
                 <p class="mb-1 fw-bold" style="color: var(--primary-color)">ROUS</p>
-                <p class="small mb-0">Sincronizado: 16/08/2026 06:52 PM</p>
+                <p class="small mb-0">Sincronizado: 16/08/2026 06:56 PM</p>
             </div>
         </div>
 
