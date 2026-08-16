@@ -324,9 +324,25 @@
             <!-- Contenedor de Tarjetas -->
             <div class="row row-grid g-3" id="products-grid">
     
+                <div class="col-6 col-md-4 col-lg-3 product-item" data-name="porta saco" data-category="Otros">
+                    <div class="card position-relative h-100" id="card-fb822a65-a5e1-4528-822a-a6f18d227540">
+                        <span class="badge bg-secondary badge-stock">No Disponible</span>
+                        <div class="img-container"><i class="bi bi-box-seam no-image-icon"></i></div>
+                        <div class="card-body d-flex flex-column justify-content-between p-2 p-md-3">
+                            <div>
+                                <div class="card-title" title="Porta saco">Porta saco</div>
+                                <div class="price-tag mb-2">S/ 4.0</div>
+                            </div>
+                            <div class="action-area">
+                                <button class="btn btn-check-item" disabled>No Disponible</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
                 <div class="col-6 col-md-4 col-lg-3 product-item" data-name="g42 set de arte 144pz" data-category="Juguetes">
                     <div class="card position-relative h-100" id="card-0a6c6786-d6a2-47cd-a09d-146ef4f82dd7">
-                        <span class="badge bg-secondary badge-stock">No Disponible</span>
+                        <span class="badge bg-success badge-stock">Stock: 7</span>
                         <div class="img-container"><img src="https://api.loyverse.com/image/09ed1cb8-8cbb-4ade-a2d6-7012ee4163b8" class="card-img-top" loading="lazy"></div>
                         <div class="card-body d-flex flex-column justify-content-between p-2 p-md-3">
                             <div>
@@ -334,7 +350,16 @@
                                 <div class="price-tag mb-2">S/ 32.0</div>
                             </div>
                             <div class="action-area">
-                                <button class="btn btn-check-item" disabled>No Disponible</button>
+                                
+                    <button class="btn btn-check-item" id="btn-main-0a6c6786-d6a2-47cd-a09d-146ef4f82dd7" onclick="addItem('0a6c6786-d6a2-47cd-a09d-146ef4f82dd7', 'G42 set de Arte 144pz', 32.0, 7)">
+                        Seleccionar
+                    </button>
+                    <div class="qty-controls" id="qty-ctrl-0a6c6786-d6a2-47cd-a09d-146ef4f82dd7">
+                        <button class="qty-btn" onclick="updateQty('0a6c6786-d6a2-47cd-a09d-146ef4f82dd7', -1)">-</button>
+                        <span class="qty-val" id="qty-val-0a6c6786-d6a2-47cd-a09d-146ef4f82dd7">1</span>
+                        <button class="qty-btn" onclick="updateQty('0a6c6786-d6a2-47cd-a09d-146ef4f82dd7', 1, 7)">+</button>
+                    </div>
+                
                             </div>
                         </div>
                     </div>
@@ -35282,7 +35307,7 @@
         <div class="footer-info text-center">
             <div class="container">
                 <p class="mb-1 fw-bold" style="color: var(--primary-color)">ROUS</p>
-                <p class="small mb-0">Sincronizado: 16/08/2026 11:11 AM</p>
+                <p class="small mb-0">Sincronizado: 16/08/2026 11:16 AM</p>
             </div>
         </div>
 
